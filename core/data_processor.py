@@ -66,13 +66,18 @@ class DataProcessor:
         from_date: Optional[date] = None,
         to_date: Optional[date] = None,
     ) -> list[AttendanceRecord]:
-        """Filter records berdasarkan rentang tanggal."""
+        """
+        Filter records berdasarkan rentang tanggal (INCLUSIVE di kedua sisi).
+        Perbandingan dilakukan pada level DATE ONLY (tanpa jam/menit/detik)
+        sehingga semua log pada to_date (jam 00:00 sampai 23:59:59) tetap masuk.
+        """
         filtered = self._records
 
         if from_date:
             filtered = [r for r in filtered if r.timestamp.date() >= from_date]
 
         if to_date:
+            # Inclusive: data pada to_date jam berapapun tetap masuk
             filtered = [r for r in filtered if r.timestamp.date() <= to_date]
 
         logger.info(

@@ -160,13 +160,17 @@ class DataViewFrame(ctk.CTkFrame):
         self._apply_filter()
 
     def _parse_date(self, date_str: str) -> Optional[date]:
+        """Parse tanggal flexibel: YYYY-MM-DD atau YYYY-M-D."""
         if not date_str:
             return None
         try:
-            parts = date_str.split("-")
-            return date(int(parts[0]), int(parts[1]), int(parts[2]))
+            # Split by dash and parse integers (handles both 2026-06-01 and 2026-6-1)
+            parts = date_str.strip().split("-")
+            if len(parts) == 3:
+                return date(int(parts[0]), int(parts[1]), int(parts[2]))
         except (ValueError, IndexError):
-            return None
+            pass
+        return None
 
     def _display_summaries(self, summaries: list[DailySummaryRecord], raw_count: int):
         """Render tabel First IN / Last OUT."""

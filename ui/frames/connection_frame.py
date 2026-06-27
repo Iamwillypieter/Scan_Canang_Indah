@@ -254,7 +254,8 @@ class ConnectionFrame(ctk.CTkFrame):
 
     def _parse_dates(self) -> tuple:
         """
-        Parse input tanggal.
+        Parse input tanggal dari UI.
+        Mendukung format: YYYY-MM-DD, YYYY-M-D, DD/MM/YYYY, D/M/YYYY
         Returns: (start_date_tuple, end_date_tuple, error_msg)
         start/end_date_tuple = (month, day, year_2digit) untuk Chiyu CGI
         """
@@ -264,20 +265,41 @@ class ConnectionFrame(ctk.CTkFrame):
         if not start_str or not end_str:
             return None, None, "Tanggal Start dan End harus diisi."
 
-        try:
-            start_dt = datetime.strptime(start_str, "%Y-%m-%d")
-            end_dt = datetime.strptime(end_str, "%Y-%m-%d")
-        except ValueError:
-            return None, None, "Format tanggal salah. Gunakan YYYY-MM-DD."
+        start_dt = self._flexible_parse_date(start_str)
+        end_dt = self._flexible_parse_date(end_str)
+
+        if not start_dt:
+            return None, None, f"Format Start Date salah: '{start_str}'. Gunakan YYYY-MM-DD."
+        if not end_dt:
+            return None, None, f"Format End Date salah: '{end_str}'. Gunakan YYYY-MM-DD."
 
         if start_dt > end_dt:
             return None, None, "Start Date tidak boleh lebih besar dari End Date."
 
-        # Chiyu CGI menggunakan year 2-digit
+        # Chiyu CGI menggunakan year 2-digit, day dan month tanpa leading zero
         start_tuple = (start_dt.month, start_dt.day, start_dt.year % 100)
         end_tuple = (end_dt.month, end_dt.day, end_dt.year % 100)
 
         return start_tuple, end_tuple, ""
+
+    @staticmethod
+    def _flexible_parse_date(s: str):
+        """Parse tanggal dengan berbagai format yang mungkin diinput user."""
+        from datetime import datetime as dt
+        formats = [
+            "%Y-%m-%d",    # 2026-06-27
+            "%Y-%m-%d",    # 2026-6-1 (strptime handles single digits)
+            "%d/%m/%Y",    # 27/06/2026
+            "%m/%d/%Y",    # 06/27/2026
+        ]
+        # Normalize: hilangkan spasi ekstra
+        s = s.strip()
+        for fmt in formats:
+            try:
+                return dt.strptime(s, fmt)
+            except ValueError:
+                continue
+        return None
 
     # ─── Logging ─────────────────────────────────────────
 

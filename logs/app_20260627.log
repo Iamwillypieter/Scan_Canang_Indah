@@ -1069,3 +1069,36 @@ requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected(
 11:52:18 [INFO] core.data_processor: Grouped: 77 raw records → 21 daily summaries
 11:53:15 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
 11:53:15 [INFO] core.data_processor: Grouped: 77 raw records → 21 daily summaries
+13:06:53 [INFO] __main__: ==================================================
+13:06:53 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+13:06:53 [INFO] __main__: ==================================================
+13:06:58 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+13:06:58 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+13:06:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+13:06:58 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+13:06:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+13:06:58 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+13:06:58 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+13:06:58 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+13:08:11 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+13:08:11 [INFO] core.chiyu: [Chiyu - Mesin 1] Search: 6/1/2026 - 6/27/2026
+13:09:27 [INFO] core.chiyu: [Chiyu - Mesin 1] Search response: 6597487 bytes
+13:09:34 [INFO] core.chiyu: [Chiyu - Mesin 1] Search berhasil: 10146 record (Total 10146 Record)
+13:09:34 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+13:09:34 [INFO] core.data_processor: Filter date: 10146/10146 records (None s/d None)
+13:09:34 [INFO] core.data_processor: Grouped: 10146 raw records → 3469 daily summaries
+13:13:41 [INFO] core.data_processor: Filter date: 158/10146 records (2026-06-01 s/d 2026-06-01)
+13:13:41 [INFO] core.data_processor: Grouped: 0 raw records → 0 daily summaries
+13:14:16 [INFO] core.data_processor: Filter date: 10146/10146 records (2026-06-01 s/d 2026-06-27)
+13:14:16 [INFO] core.data_processor: Grouped: 40 raw records → 21 daily summaries
+13:15:25 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+13:15:25 [INFO] core.chiyu: [Chiyu - Mesin 2] Search: 6/1/2026 - 6/27/2026
+13:16:34 [INFO] core.chiyu: [Chiyu - Mesin 2] Search response: 5967909 bytes
+13:16:37 [INFO] core.chiyu: [Chiyu - Mesin 2] Search berhasil: 9206 record (Total 9206 Record)
+13:16:37 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+13:16:37 [INFO] core.data_processor: Filter date: 9206/9206 records (2026-06-01 s/d 2026-06-27)
+13:16:37 [INFO] core.data_processor: Grouped: 0 raw records → 0 daily summaries
+13:17:05 [INFO] core.data_processor: Filter date: 9206/9206 records (2026-06-01 s/d 2026-06-27)
+13:17:05 [INFO] core.data_processor: Grouped: 69 raw records → 23 daily summaries
+13:21:23 [INFO] core.data_processor: Filter date: 9206/9206 records (2026-06-01 s/d 2026-06-27)
+13:21:23 [INFO] core.data_processor: Grouped: 53 raw records → 21 daily summaries
