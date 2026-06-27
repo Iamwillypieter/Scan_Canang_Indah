@@ -1,0 +1,16 @@
+# GUI Framework
+customtkinter==5.2.1
+
+# ZKTeco/Biotronix - Direct TCP communication
+pyzk==0.9
+
+# Chiyu - HTTP/CGI web scraping
+requests==2.32.3
+beautifulsoup4==4.12.3
+
+# Data Processing & Export
+pandas==2.2.2
+openpyxl==3.1.5
+
+# Build executable (optional)
+# pyinstaller==6.6.0

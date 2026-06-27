@@ -1,0 +1,1071 @@
+10:17:09 [INFO] __main__: ==================================================
+10:17:09 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+10:17:09 [INFO] __main__: ==================================================
+10:17:20 [INFO] __main__: ==================================================
+10:17:20 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+10:17:20 [INFO] __main__: ==================================================
+10:17:32 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+10:17:32 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+10:17:32 [INFO] core.biotronix: [Biotronix - Mesin 1] Attempt 1/3 connecting to 192.168.3.85:4370...
+10:17:32 [INFO] core.biotronix: [Biotronix - Mesin 2] Attempt 1/3 connecting to 192.168.3.87:4370...
+10:17:32 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+10:17:32 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+10:17:44 [WARNING] core.biotronix: [Biotronix - Mesin 2] Attempt 1 failed: timed out
+10:17:44 [WARNING] core.biotronix: [Biotronix - Mesin 1] Attempt 1 failed: timed out
+10:17:46 [INFO] core.biotronix: [Biotronix - Mesin 2] Attempt 2/3 connecting to 192.168.3.87:4370...
+10:17:46 [INFO] core.biotronix: [Biotronix - Mesin 1] Attempt 2/3 connecting to 192.168.3.85:4370...
+10:17:58 [WARNING] core.biotronix: [Biotronix - Mesin 2] Attempt 2 failed: timed out
+10:17:58 [WARNING] core.biotronix: [Biotronix - Mesin 1] Attempt 2 failed: timed out
+10:18:00 [INFO] core.biotronix: [Biotronix - Mesin 2] Attempt 3/3 connecting to 192.168.3.87:4370...
+10:18:00 [INFO] core.biotronix: [Biotronix - Mesin 1] Attempt 3/3 connecting to 192.168.3.85:4370...
+10:18:12 [WARNING] core.biotronix: [Biotronix - Mesin 2] Attempt 3 failed: timed out
+10:18:12 [WARNING] core.biotronix: [Biotronix - Mesin 1] Attempt 3 failed: timed out
+10:22:48 [INFO] __main__: ==================================================
+10:22:48 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+10:22:48 [INFO] __main__: ==================================================
+10:22:59 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+10:22:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+10:22:59 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+10:22:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+10:22:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+10:22:59 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+10:22:59 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+10:22:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+10:33:34 [INFO] __main__: ==================================================
+10:33:34 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+10:33:34 [INFO] __main__: ==================================================
+10:33:43 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+10:33:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+10:33:43 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+10:33:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+10:33:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+10:33:43 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+10:33:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+10:33:43 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+10:35:18 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+10:35:18 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+10:35:18 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+10:35:18 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+10:35:18 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 0: 20 records (total so far: 20)
+10:35:18 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 0: 20 records (total so far: 20)
+10:35:18 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 0: 20 records (total so far: 20)
+10:35:18 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Page 0: 20 records (total so far: 20)
+10:35:19 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 1: 20 records (total so far: 40)
+10:35:19 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 1: 20 records (total so far: 40)
+10:35:19 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 1: 20 records (total so far: 40)
+10:35:19 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Page 1: 20 records (total so far: 40)
+10:35:20 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 2: 20 records (total so far: 60)
+10:35:20 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 2: 20 records (total so far: 60)
+10:35:20 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 2: 20 records (total so far: 60)
+10:35:20 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Page 2: 20 records (total so far: 60)
+10:35:21 [ERROR] core.chiyu: [Biotronix 6600 - Mesin 1] Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python314\Lib\http\client.py", line 1459, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 498, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python314\Lib\http\client.py", line 1459, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project Scan\core\chiyu.py", line 244, in get_attendance_logs
+    response = self._session.get(url, params=params, timeout=READ_TIMEOUT)
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 725, in send
+    history = [resp for resp in gen]
+                                ^^^
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 266, in resolve_redirects
+    resp = self.send(
+        req,
+    ...<6 lines>...
+        **adapter_kwargs,
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+10:35:21 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+10:35:21 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 3: 20 records (total so far: 80)
+10:35:21 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 3: 20 records (total so far: 80)
+10:35:21 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 3: 20 records (total so far: 80)
+10:35:22 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 4: 20 records (total so far: 100)
+10:35:22 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 4: 20 records (total so far: 100)
+10:35:22 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 4: 20 records (total so far: 100)
+10:35:22 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 5: 20 records (total so far: 120)
+10:35:23 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 5: 20 records (total so far: 120)
+10:35:23 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 5: 20 records (total so far: 120)
+10:35:23 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 6: 20 records (total so far: 140)
+10:35:23 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 6: 20 records (total so far: 140)
+10:35:24 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 6: 20 records (total so far: 140)
+10:35:24 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 7: 20 records (total so far: 160)
+10:35:24 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 7: 20 records (total so far: 160)
+10:35:24 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 7: 20 records (total so far: 160)
+10:35:25 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 8: 20 records (total so far: 180)
+10:35:25 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 8: 20 records (total so far: 180)
+10:35:25 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 8: 20 records (total so far: 180)
+10:35:26 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 9: 20 records (total so far: 200)
+10:35:26 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 9: 20 records (total so far: 200)
+10:35:26 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 9: 20 records (total so far: 200)
+10:35:27 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 10: 20 records (total so far: 220)
+10:35:27 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 10: 20 records (total so far: 220)
+10:35:27 [INFO] core.chiyu: [Chiyu - Mesin 1] Page 10: 20 records (total so far: 220)
+10:35:27 [ERROR] core.chiyu: [Chiyu - Mesin 1] Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python314\Lib\http\client.py", line 1459, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 498, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python314\Lib\http\client.py", line 1459, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 305, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project Scan\core\chiyu.py", line 244, in get_attendance_logs
+    response = self._session.get(url, params=params, timeout=READ_TIMEOUT)
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 725, in send
+    history = [resp for resp in gen]
+                                ^^^
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 266, in resolve_redirects
+    resp = self.send(
+        req,
+    ...<6 lines>...
+        **adapter_kwargs,
+    )
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\willy\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+10:35:27 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+10:35:28 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 11: 20 records (total so far: 240)
+10:35:28 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 11: 20 records (total so far: 240)
+10:35:28 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 12: 20 records (total so far: 260)
+10:35:29 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 12: 20 records (total so far: 260)
+10:35:29 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 13: 20 records (total so far: 280)
+10:35:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 13: 20 records (total so far: 280)
+10:35:30 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 14: 20 records (total so far: 300)
+10:35:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 14: 20 records (total so far: 300)
+10:35:31 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 15: 20 records (total so far: 320)
+10:35:31 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 15: 20 records (total so far: 320)
+10:35:32 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 16: 20 records (total so far: 340)
+10:35:32 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 16: 20 records (total so far: 340)
+10:35:33 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 17: 20 records (total so far: 360)
+10:35:33 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 17: 20 records (total so far: 360)
+10:35:33 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 18: 20 records (total so far: 380)
+10:35:34 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 18: 20 records (total so far: 380)
+10:35:34 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 19: 20 records (total so far: 400)
+10:35:35 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 19: 20 records (total so far: 400)
+10:35:35 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 20: 20 records (total so far: 420)
+10:35:36 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 20: 20 records (total so far: 420)
+10:35:36 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 21: 20 records (total so far: 440)
+10:35:37 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 21: 20 records (total so far: 440)
+10:35:37 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 22: 20 records (total so far: 460)
+10:35:37 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 22: 20 records (total so far: 460)
+10:35:38 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 23: 20 records (total so far: 480)
+10:35:38 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 23: 20 records (total so far: 480)
+10:35:39 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 24: 20 records (total so far: 500)
+10:35:39 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 24: 20 records (total so far: 500)
+10:35:39 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 25: 20 records (total so far: 520)
+10:35:40 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 25: 20 records (total so far: 520)
+10:35:40 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 26: 20 records (total so far: 540)
+10:35:41 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 26: 20 records (total so far: 540)
+10:35:41 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 27: 20 records (total so far: 560)
+10:35:42 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 27: 20 records (total so far: 560)
+10:35:42 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 28: 20 records (total so far: 580)
+10:35:43 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 28: 20 records (total so far: 580)
+10:35:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 29: 20 records (total so far: 600)
+10:35:43 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 29: 20 records (total so far: 600)
+10:35:44 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 30: 20 records (total so far: 620)
+10:35:44 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 30: 20 records (total so far: 620)
+10:35:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 31: 20 records (total so far: 640)
+10:35:45 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 31: 20 records (total so far: 640)
+10:35:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 32: 20 records (total so far: 660)
+10:35:46 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 32: 20 records (total so far: 660)
+10:35:46 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 33: 20 records (total so far: 680)
+10:35:47 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 33: 20 records (total so far: 680)
+10:35:47 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 34: 20 records (total so far: 700)
+10:35:48 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 34: 20 records (total so far: 700)
+10:35:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 35: 20 records (total so far: 720)
+10:35:49 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 35: 20 records (total so far: 720)
+10:35:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 36: 20 records (total so far: 740)
+10:35:50 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 36: 20 records (total so far: 740)
+10:35:50 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 37: 20 records (total so far: 760)
+10:35:51 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 37: 20 records (total so far: 760)
+10:35:51 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 38: 20 records (total so far: 780)
+10:35:51 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 39: 20 records (total so far: 800)
+10:35:51 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 38: 20 records (total so far: 780)
+10:35:52 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 39: 20 records (total so far: 800)
+10:35:52 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 40: 20 records (total so far: 820)
+10:35:53 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 40: 20 records (total so far: 820)
+10:35:53 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 41: 20 records (total so far: 840)
+10:35:54 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 41: 20 records (total so far: 840)
+10:35:54 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 42: 20 records (total so far: 860)
+10:35:55 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 43: 20 records (total so far: 880)
+10:35:55 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 42: 20 records (total so far: 860)
+10:35:56 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 44: 20 records (total so far: 900)
+10:35:56 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 43: 20 records (total so far: 880)
+10:35:57 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 45: 20 records (total so far: 920)
+10:35:57 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 44: 20 records (total so far: 900)
+10:35:57 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 46: 20 records (total so far: 940)
+10:35:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 45: 20 records (total so far: 920)
+10:35:58 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 47: 20 records (total so far: 960)
+10:35:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 46: 20 records (total so far: 940)
+10:35:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 48: 20 records (total so far: 980)
+10:35:59 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 47: 20 records (total so far: 960)
+10:36:00 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 49: 20 records (total so far: 1000)
+10:36:00 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 48: 20 records (total so far: 980)
+10:36:01 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 50: 20 records (total so far: 1020)
+10:36:01 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 49: 20 records (total so far: 1000)
+10:36:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 51: 20 records (total so far: 1040)
+10:36:02 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 50: 20 records (total so far: 1020)
+10:36:03 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 52: 20 records (total so far: 1060)
+10:36:03 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 51: 20 records (total so far: 1040)
+10:36:03 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 53: 20 records (total so far: 1080)
+10:36:04 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 52: 20 records (total so far: 1060)
+10:36:04 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 54: 20 records (total so far: 1100)
+10:36:05 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 53: 20 records (total so far: 1080)
+10:36:05 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 55: 20 records (total so far: 1120)
+10:36:06 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 54: 20 records (total so far: 1100)
+10:36:06 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 56: 20 records (total so far: 1140)
+10:36:06 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 55: 20 records (total so far: 1120)
+10:36:07 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 57: 20 records (total so far: 1160)
+10:36:07 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 56: 20 records (total so far: 1140)
+10:36:08 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 58: 20 records (total so far: 1180)
+10:36:08 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 57: 20 records (total so far: 1160)
+10:36:09 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 59: 20 records (total so far: 1200)
+10:36:09 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 58: 20 records (total so far: 1180)
+10:36:09 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 60: 20 records (total so far: 1220)
+10:36:10 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 59: 20 records (total so far: 1200)
+10:36:10 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 61: 20 records (total so far: 1240)
+10:36:11 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 60: 20 records (total so far: 1220)
+10:36:11 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 62: 20 records (total so far: 1260)
+10:36:12 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 63: 20 records (total so far: 1280)
+10:36:12 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 61: 20 records (total so far: 1240)
+10:36:13 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 64: 20 records (total so far: 1300)
+10:36:13 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 62: 20 records (total so far: 1260)
+10:36:14 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 65: 20 records (total so far: 1320)
+10:36:14 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 63: 20 records (total so far: 1280)
+10:36:15 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 66: 20 records (total so far: 1340)
+10:36:15 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 64: 20 records (total so far: 1300)
+10:36:15 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 67: 20 records (total so far: 1360)
+10:36:16 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 65: 20 records (total so far: 1320)
+10:36:16 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 68: 20 records (total so far: 1380)
+10:36:17 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 66: 20 records (total so far: 1340)
+10:36:17 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 69: 20 records (total so far: 1400)
+10:36:18 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 70: 20 records (total so far: 1420)
+10:36:18 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 67: 20 records (total so far: 1360)
+10:36:19 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 71: 20 records (total so far: 1440)
+10:36:19 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 68: 20 records (total so far: 1380)
+10:36:20 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 72: 20 records (total so far: 1460)
+10:36:20 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 69: 20 records (total so far: 1400)
+10:36:21 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 73: 20 records (total so far: 1480)
+10:36:21 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 70: 20 records (total so far: 1420)
+10:36:21 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 74: 20 records (total so far: 1500)
+10:36:22 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 75: 20 records (total so far: 1520)
+10:36:23 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 71: 20 records (total so far: 1440)
+10:36:23 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 76: 20 records (total so far: 1540)
+10:36:24 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 72: 20 records (total so far: 1460)
+10:36:24 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 77: 20 records (total so far: 1560)
+10:36:25 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 73: 20 records (total so far: 1480)
+10:36:25 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 78: 20 records (total so far: 1580)
+10:36:26 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 79: 20 records (total so far: 1600)
+10:36:26 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 74: 20 records (total so far: 1500)
+10:36:26 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 80: 20 records (total so far: 1620)
+10:36:27 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 75: 20 records (total so far: 1520)
+10:36:27 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 81: 20 records (total so far: 1640)
+10:36:28 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 76: 20 records (total so far: 1540)
+10:36:28 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 82: 20 records (total so far: 1660)
+10:36:29 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 77: 20 records (total so far: 1560)
+10:36:29 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 83: 20 records (total so far: 1680)
+10:36:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 78: 20 records (total so far: 1580)
+10:36:30 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 84: 20 records (total so far: 1700)
+10:36:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 79: 20 records (total so far: 1600)
+10:36:31 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 85: 20 records (total so far: 1720)
+10:36:31 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 80: 20 records (total so far: 1620)
+10:36:32 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 86: 20 records (total so far: 1740)
+10:36:32 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 81: 20 records (total so far: 1640)
+10:36:32 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 87: 20 records (total so far: 1760)
+10:36:33 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 82: 20 records (total so far: 1660)
+10:36:33 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 88: 20 records (total so far: 1780)
+10:36:34 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 83: 20 records (total so far: 1680)
+10:36:34 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 89: 20 records (total so far: 1800)
+10:36:35 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 84: 20 records (total so far: 1700)
+10:36:35 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 90: 20 records (total so far: 1820)
+10:36:36 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 85: 20 records (total so far: 1720)
+10:36:36 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 91: 20 records (total so far: 1840)
+10:36:37 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 86: 20 records (total so far: 1740)
+10:36:37 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 92: 20 records (total so far: 1860)
+10:36:37 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 87: 20 records (total so far: 1760)
+10:36:38 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 93: 20 records (total so far: 1880)
+10:36:38 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 88: 20 records (total so far: 1780)
+10:36:38 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 94: 20 records (total so far: 1900)
+10:36:39 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 89: 20 records (total so far: 1800)
+10:36:39 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 95: 20 records (total so far: 1920)
+10:36:40 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 96: 20 records (total so far: 1940)
+10:36:40 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 90: 20 records (total so far: 1820)
+10:36:41 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 97: 20 records (total so far: 1960)
+10:36:41 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 91: 20 records (total so far: 1840)
+10:36:42 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 98: 20 records (total so far: 1980)
+10:36:42 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 92: 20 records (total so far: 1860)
+10:36:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 99: 20 records (total so far: 2000)
+10:36:43 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 93: 20 records (total so far: 1880)
+10:36:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 100: 20 records (total so far: 2020)
+10:36:44 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 94: 20 records (total so far: 1900)
+10:36:44 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 101: 20 records (total so far: 2040)
+10:36:44 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 95: 20 records (total so far: 1920)
+10:36:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 102: 20 records (total so far: 2060)
+10:36:45 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 96: 20 records (total so far: 1940)
+10:36:46 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 103: 20 records (total so far: 2080)
+10:36:46 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 97: 20 records (total so far: 1960)
+10:36:47 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 104: 20 records (total so far: 2100)
+10:36:47 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 98: 20 records (total so far: 1980)
+10:36:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 105: 20 records (total so far: 2120)
+10:36:48 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 99: 20 records (total so far: 2000)
+10:36:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 106: 20 records (total so far: 2140)
+10:36:49 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 100: 20 records (total so far: 2020)
+10:36:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 107: 20 records (total so far: 2160)
+10:36:50 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 101: 20 records (total so far: 2040)
+10:36:50 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 108: 20 records (total so far: 2180)
+10:36:51 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 102: 20 records (total so far: 2060)
+10:36:51 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 109: 20 records (total so far: 2200)
+10:36:52 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 103: 20 records (total so far: 2080)
+10:36:52 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 110: 20 records (total so far: 2220)
+10:36:52 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 104: 20 records (total so far: 2100)
+10:36:53 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 111: 20 records (total so far: 2240)
+10:36:53 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 105: 20 records (total so far: 2120)
+10:36:54 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 112: 20 records (total so far: 2260)
+10:36:54 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 106: 20 records (total so far: 2140)
+10:36:55 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 113: 20 records (total so far: 2280)
+10:36:55 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 107: 20 records (total so far: 2160)
+10:36:55 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 114: 20 records (total so far: 2300)
+10:36:56 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 108: 20 records (total so far: 2180)
+10:36:56 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 115: 20 records (total so far: 2320)
+10:36:57 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 109: 20 records (total so far: 2200)
+10:36:57 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 116: 20 records (total so far: 2340)
+10:36:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 110: 20 records (total so far: 2220)
+10:36:58 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 117: 20 records (total so far: 2360)
+10:36:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 111: 20 records (total so far: 2240)
+10:36:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 118: 20 records (total so far: 2380)
+10:36:59 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 112: 20 records (total so far: 2260)
+10:37:00 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 119: 20 records (total so far: 2400)
+10:37:00 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 113: 20 records (total so far: 2280)
+10:37:01 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 120: 20 records (total so far: 2420)
+10:37:01 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 114: 20 records (total so far: 2300)
+10:37:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 121: 20 records (total so far: 2440)
+10:37:02 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 115: 20 records (total so far: 2320)
+10:37:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 122: 20 records (total so far: 2460)
+10:37:03 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 116: 20 records (total so far: 2340)
+10:37:03 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 123: 20 records (total so far: 2480)
+10:37:03 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 117: 20 records (total so far: 2360)
+10:37:04 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 124: 20 records (total so far: 2500)
+10:37:04 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 118: 20 records (total so far: 2380)
+10:37:05 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 125: 20 records (total so far: 2520)
+10:37:05 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 119: 20 records (total so far: 2400)
+10:37:06 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 126: 20 records (total so far: 2540)
+10:37:06 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 120: 20 records (total so far: 2420)
+10:37:07 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 127: 20 records (total so far: 2560)
+10:37:07 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 121: 20 records (total so far: 2440)
+10:37:08 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 128: 20 records (total so far: 2580)
+10:37:08 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 122: 20 records (total so far: 2460)
+10:37:08 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 129: 20 records (total so far: 2600)
+10:37:08 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 123: 20 records (total so far: 2480)
+10:37:09 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 130: 20 records (total so far: 2620)
+10:37:09 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 124: 20 records (total so far: 2500)
+10:37:10 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 131: 20 records (total so far: 2640)
+10:37:10 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 125: 20 records (total so far: 2520)
+10:37:11 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 132: 20 records (total so far: 2660)
+10:37:11 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 126: 20 records (total so far: 2540)
+10:37:12 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 133: 20 records (total so far: 2680)
+10:37:12 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 127: 20 records (total so far: 2560)
+10:37:13 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 134: 20 records (total so far: 2700)
+10:37:13 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 128: 20 records (total so far: 2580)
+10:37:13 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 135: 20 records (total so far: 2720)
+10:37:13 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 129: 20 records (total so far: 2600)
+10:37:14 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 130: 20 records (total so far: 2620)
+10:37:14 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 136: 20 records (total so far: 2740)
+10:37:15 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 131: 20 records (total so far: 2640)
+10:37:15 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 137: 20 records (total so far: 2760)
+10:37:16 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 132: 20 records (total so far: 2660)
+10:37:16 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 138: 20 records (total so far: 2780)
+10:37:17 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 133: 20 records (total so far: 2680)
+10:37:17 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 139: 20 records (total so far: 2800)
+10:37:18 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 140: 20 records (total so far: 2820)
+10:37:18 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 134: 20 records (total so far: 2700)
+10:37:19 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 141: 20 records (total so far: 2840)
+10:37:19 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 135: 20 records (total so far: 2720)
+10:37:19 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 136: 20 records (total so far: 2740)
+10:37:19 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 142: 20 records (total so far: 2860)
+10:37:20 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 143: 20 records (total so far: 2880)
+10:37:20 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 137: 20 records (total so far: 2760)
+10:37:21 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 138: 20 records (total so far: 2780)
+10:37:21 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 144: 20 records (total so far: 2900)
+10:37:22 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 139: 20 records (total so far: 2800)
+10:37:22 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 145: 20 records (total so far: 2920)
+10:37:23 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 140: 20 records (total so far: 2820)
+10:37:23 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 146: 20 records (total so far: 2940)
+10:37:24 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 141: 20 records (total so far: 2840)
+10:37:24 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 147: 20 records (total so far: 2960)
+10:37:25 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 142: 20 records (total so far: 2860)
+10:37:25 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 148: 20 records (total so far: 2980)
+10:37:25 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 143: 20 records (total so far: 2880)
+10:37:25 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 149: 20 records (total so far: 3000)
+10:37:26 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 144: 20 records (total so far: 2900)
+10:37:26 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 150: 20 records (total so far: 3020)
+10:37:27 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 145: 20 records (total so far: 2920)
+10:37:27 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 151: 20 records (total so far: 3040)
+10:37:28 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 146: 20 records (total so far: 2940)
+10:37:28 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 152: 20 records (total so far: 3060)
+10:37:29 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 147: 20 records (total so far: 2960)
+10:37:29 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 153: 20 records (total so far: 3080)
+10:37:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 148: 20 records (total so far: 2980)
+10:37:30 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 154: 20 records (total so far: 3100)
+10:37:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 149: 20 records (total so far: 3000)
+10:37:31 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 155: 20 records (total so far: 3120)
+10:37:31 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 150: 20 records (total so far: 3020)
+10:37:31 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 156: 20 records (total so far: 3140)
+10:37:32 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 151: 20 records (total so far: 3040)
+10:37:32 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 157: 20 records (total so far: 3160)
+10:37:33 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 152: 20 records (total so far: 3060)
+10:37:33 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 158: 20 records (total so far: 3180)
+10:37:34 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 153: 20 records (total so far: 3080)
+10:37:34 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 159: 20 records (total so far: 3200)
+10:37:35 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 154: 20 records (total so far: 3100)
+10:37:35 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 160: 20 records (total so far: 3220)
+10:37:35 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 155: 20 records (total so far: 3120)
+10:37:36 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 161: 20 records (total so far: 3240)
+10:37:36 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 156: 20 records (total so far: 3140)
+10:37:37 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 162: 20 records (total so far: 3260)
+10:37:37 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 157: 20 records (total so far: 3160)
+10:37:38 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 163: 20 records (total so far: 3280)
+10:37:38 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 158: 20 records (total so far: 3180)
+10:37:38 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 164: 20 records (total so far: 3300)
+10:37:39 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 159: 20 records (total so far: 3200)
+10:37:39 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 165: 20 records (total so far: 3320)
+10:37:40 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 160: 20 records (total so far: 3220)
+10:37:40 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 166: 20 records (total so far: 3340)
+10:37:40 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 161: 20 records (total so far: 3240)
+10:37:41 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 167: 20 records (total so far: 3360)
+10:37:41 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 162: 20 records (total so far: 3260)
+10:37:42 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 168: 20 records (total so far: 3380)
+10:37:42 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 163: 20 records (total so far: 3280)
+10:37:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 169: 20 records (total so far: 3400)
+10:37:43 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 164: 20 records (total so far: 3300)
+10:37:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 170: 20 records (total so far: 3420)
+10:37:44 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 165: 20 records (total so far: 3320)
+10:37:44 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 171: 20 records (total so far: 3440)
+10:37:45 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 166: 20 records (total so far: 3340)
+10:37:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 172: 20 records (total so far: 3460)
+10:37:45 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 167: 20 records (total so far: 3360)
+10:37:46 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 173: 20 records (total so far: 3480)
+10:37:46 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 168: 20 records (total so far: 3380)
+10:37:47 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 174: 20 records (total so far: 3500)
+10:37:47 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 169: 20 records (total so far: 3400)
+10:37:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 175: 20 records (total so far: 3520)
+10:37:48 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 170: 20 records (total so far: 3420)
+10:37:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 176: 20 records (total so far: 3540)
+10:37:49 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 171: 20 records (total so far: 3440)
+10:37:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 177: 20 records (total so far: 3560)
+10:37:50 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 172: 20 records (total so far: 3460)
+10:37:50 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 178: 20 records (total so far: 3580)
+10:37:51 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 173: 20 records (total so far: 3480)
+10:37:51 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 179: 20 records (total so far: 3600)
+10:37:51 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 174: 20 records (total so far: 3500)
+10:37:52 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 180: 20 records (total so far: 3620)
+10:37:52 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 175: 20 records (total so far: 3520)
+10:37:53 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 181: 20 records (total so far: 3640)
+10:37:53 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 176: 20 records (total so far: 3540)
+10:37:54 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 182: 20 records (total so far: 3660)
+10:37:54 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 177: 20 records (total so far: 3560)
+10:37:55 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 183: 20 records (total so far: 3680)
+10:37:55 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 178: 20 records (total so far: 3580)
+10:37:55 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 184: 20 records (total so far: 3700)
+10:37:56 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 179: 20 records (total so far: 3600)
+10:37:56 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 185: 20 records (total so far: 3720)
+10:37:56 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 180: 20 records (total so far: 3620)
+10:37:57 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 186: 20 records (total so far: 3740)
+10:37:57 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 181: 20 records (total so far: 3640)
+10:37:58 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 187: 20 records (total so far: 3760)
+10:37:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 182: 20 records (total so far: 3660)
+10:37:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 188: 20 records (total so far: 3780)
+10:37:59 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 183: 20 records (total so far: 3680)
+10:38:00 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 189: 20 records (total so far: 3800)
+10:38:00 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 184: 20 records (total so far: 3700)
+10:38:01 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 190: 20 records (total so far: 3820)
+10:38:01 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 185: 20 records (total so far: 3720)
+10:38:01 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 191: 20 records (total so far: 3840)
+10:38:02 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 186: 20 records (total so far: 3740)
+10:38:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 192: 20 records (total so far: 3860)
+10:38:02 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 187: 20 records (total so far: 3760)
+10:38:03 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 188: 20 records (total so far: 3780)
+10:38:03 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 193: 20 records (total so far: 3880)
+10:38:04 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 189: 20 records (total so far: 3800)
+10:38:04 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 194: 20 records (total so far: 3900)
+10:38:05 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 190: 20 records (total so far: 3820)
+10:38:05 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 195: 20 records (total so far: 3920)
+10:38:06 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 196: 20 records (total so far: 3940)
+10:38:06 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 191: 20 records (total so far: 3840)
+10:38:07 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 192: 20 records (total so far: 3860)
+10:38:07 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 197: 20 records (total so far: 3960)
+10:38:07 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 193: 20 records (total so far: 3880)
+10:38:07 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 198: 20 records (total so far: 3980)
+10:38:08 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 194: 20 records (total so far: 3900)
+10:38:08 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 199: 20 records (total so far: 4000)
+10:38:09 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 195: 20 records (total so far: 3920)
+10:38:09 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 200: 20 records (total so far: 4020)
+10:38:10 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 196: 20 records (total so far: 3940)
+10:38:10 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 201: 20 records (total so far: 4040)
+10:38:11 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 197: 20 records (total so far: 3960)
+10:38:11 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 202: 20 records (total so far: 4060)
+10:38:12 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 198: 20 records (total so far: 3980)
+10:38:12 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 203: 20 records (total so far: 4080)
+10:38:12 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 199: 20 records (total so far: 4000)
+10:38:13 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 204: 20 records (total so far: 4100)
+10:38:13 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 200: 20 records (total so far: 4020)
+10:38:13 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 205: 20 records (total so far: 4120)
+10:38:14 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 201: 20 records (total so far: 4040)
+10:38:14 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 206: 20 records (total so far: 4140)
+10:38:15 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 202: 20 records (total so far: 4060)
+10:38:15 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 207: 20 records (total so far: 4160)
+10:38:16 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 203: 20 records (total so far: 4080)
+10:38:16 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 208: 20 records (total so far: 4180)
+10:38:17 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 204: 20 records (total so far: 4100)
+10:38:17 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 209: 20 records (total so far: 4200)
+10:38:17 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 205: 20 records (total so far: 4120)
+10:38:18 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 210: 20 records (total so far: 4220)
+10:38:18 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 206: 20 records (total so far: 4140)
+10:38:19 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 211: 20 records (total so far: 4240)
+10:38:19 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 207: 20 records (total so far: 4160)
+10:38:19 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 212: 20 records (total so far: 4260)
+10:38:20 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 208: 20 records (total so far: 4180)
+10:38:20 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 213: 20 records (total so far: 4280)
+10:38:21 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 209: 20 records (total so far: 4200)
+10:38:21 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 214: 20 records (total so far: 4300)
+10:38:22 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 210: 20 records (total so far: 4220)
+10:38:22 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 215: 20 records (total so far: 4320)
+10:38:22 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 211: 20 records (total so far: 4240)
+10:38:23 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 216: 20 records (total so far: 4340)
+10:38:23 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 212: 20 records (total so far: 4260)
+10:38:24 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 213: 20 records (total so far: 4280)
+10:38:24 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 217: 20 records (total so far: 4360)
+10:38:25 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 214: 20 records (total so far: 4300)
+10:38:25 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 218: 20 records (total so far: 4380)
+10:38:26 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 215: 20 records (total so far: 4320)
+10:38:26 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 219: 20 records (total so far: 4400)
+10:38:27 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 216: 20 records (total so far: 4340)
+10:38:27 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 220: 20 records (total so far: 4420)
+10:38:28 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 217: 20 records (total so far: 4360)
+10:38:28 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 221: 20 records (total so far: 4440)
+10:38:28 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 218: 20 records (total so far: 4380)
+10:38:28 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 222: 20 records (total so far: 4460)
+10:38:29 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 219: 20 records (total so far: 4400)
+10:38:29 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 223: 20 records (total so far: 4480)
+10:38:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 220: 20 records (total so far: 4420)
+10:38:30 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 224: 20 records (total so far: 4500)
+10:38:31 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 221: 20 records (total so far: 4440)
+10:38:31 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 225: 20 records (total so far: 4520)
+10:38:32 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 222: 20 records (total so far: 4460)
+10:38:32 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 226: 20 records (total so far: 4540)
+10:38:33 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 223: 20 records (total so far: 4480)
+10:38:33 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 227: 20 records (total so far: 4560)
+10:38:33 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 224: 20 records (total so far: 4500)
+10:38:34 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 228: 20 records (total so far: 4580)
+10:38:34 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 225: 20 records (total so far: 4520)
+10:38:34 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 229: 20 records (total so far: 4600)
+10:38:35 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 226: 20 records (total so far: 4540)
+10:38:35 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 230: 20 records (total so far: 4620)
+10:38:36 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 227: 20 records (total so far: 4560)
+10:38:36 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 231: 20 records (total so far: 4640)
+10:38:37 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 228: 20 records (total so far: 4580)
+10:38:37 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 232: 20 records (total so far: 4660)
+10:38:38 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 229: 20 records (total so far: 4600)
+10:38:38 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 233: 20 records (total so far: 4680)
+10:38:39 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 230: 20 records (total so far: 4620)
+10:38:39 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 234: 20 records (total so far: 4700)
+10:38:39 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 231: 20 records (total so far: 4640)
+10:38:40 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 235: 20 records (total so far: 4720)
+10:38:40 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 232: 20 records (total so far: 4660)
+10:38:40 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 236: 20 records (total so far: 4740)
+10:38:41 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 233: 20 records (total so far: 4680)
+10:38:41 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 237: 20 records (total so far: 4760)
+10:38:42 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 234: 20 records (total so far: 4700)
+10:38:42 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 238: 20 records (total so far: 4780)
+10:38:43 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 235: 20 records (total so far: 4720)
+10:38:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 239: 20 records (total so far: 4800)
+10:38:44 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 236: 20 records (total so far: 4740)
+10:38:44 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 240: 20 records (total so far: 4820)
+10:38:45 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 237: 20 records (total so far: 4760)
+10:38:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 241: 20 records (total so far: 4840)
+10:38:45 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 238: 20 records (total so far: 4780)
+10:38:46 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 242: 20 records (total so far: 4860)
+10:38:46 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 239: 20 records (total so far: 4800)
+10:38:46 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 243: 20 records (total so far: 4880)
+10:38:47 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 240: 20 records (total so far: 4820)
+10:38:47 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 244: 20 records (total so far: 4900)
+10:38:48 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 241: 20 records (total so far: 4840)
+10:38:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 245: 20 records (total so far: 4920)
+10:38:49 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 242: 20 records (total so far: 4860)
+10:38:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 246: 20 records (total so far: 4940)
+10:38:50 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 243: 20 records (total so far: 4880)
+10:38:50 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 247: 20 records (total so far: 4960)
+10:38:50 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 244: 20 records (total so far: 4900)
+10:38:51 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 248: 20 records (total so far: 4980)
+10:38:51 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 245: 20 records (total so far: 4920)
+10:38:52 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 249: 20 records (total so far: 5000)
+10:38:52 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 246: 20 records (total so far: 4940)
+10:38:53 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 250: 20 records (total so far: 5020)
+10:38:53 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 247: 20 records (total so far: 4960)
+10:38:53 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 251: 20 records (total so far: 5040)
+10:38:54 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 248: 20 records (total so far: 4980)
+10:38:54 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 252: 20 records (total so far: 5060)
+10:38:55 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 249: 20 records (total so far: 5000)
+10:38:55 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 253: 20 records (total so far: 5080)
+10:38:56 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 250: 20 records (total so far: 5020)
+10:38:56 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 254: 20 records (total so far: 5100)
+10:38:56 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 251: 20 records (total so far: 5040)
+10:38:57 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 255: 20 records (total so far: 5120)
+10:38:57 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 252: 20 records (total so far: 5060)
+10:38:58 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 256: 20 records (total so far: 5140)
+10:38:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 253: 20 records (total so far: 5080)
+10:38:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 257: 20 records (total so far: 5160)
+10:38:59 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 254: 20 records (total so far: 5100)
+10:38:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 258: 20 records (total so far: 5180)
+10:39:00 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 255: 20 records (total so far: 5120)
+10:39:00 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 259: 20 records (total so far: 5200)
+10:39:01 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 256: 20 records (total so far: 5140)
+10:39:01 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 260: 20 records (total so far: 5220)
+10:39:01 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 257: 20 records (total so far: 5160)
+10:39:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 261: 20 records (total so far: 5240)
+10:39:02 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 258: 20 records (total so far: 5180)
+10:39:03 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 262: 20 records (total so far: 5260)
+10:39:03 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 259: 20 records (total so far: 5200)
+10:39:04 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 263: 20 records (total so far: 5280)
+10:39:04 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 260: 20 records (total so far: 5220)
+10:39:05 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 264: 20 records (total so far: 5300)
+10:39:05 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 261: 20 records (total so far: 5240)
+10:39:06 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 265: 20 records (total so far: 5320)
+10:39:06 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 262: 20 records (total so far: 5260)
+10:39:06 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 263: 20 records (total so far: 5280)
+10:39:06 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 266: 20 records (total so far: 5340)
+10:39:07 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 264: 20 records (total so far: 5300)
+10:39:07 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 267: 20 records (total so far: 5360)
+10:39:08 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 265: 20 records (total so far: 5320)
+10:39:08 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 268: 20 records (total so far: 5380)
+10:39:09 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 266: 20 records (total so far: 5340)
+10:39:09 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 269: 20 records (total so far: 5400)
+10:39:10 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 267: 20 records (total so far: 5360)
+10:39:10 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 270: 20 records (total so far: 5420)
+10:39:11 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 268: 20 records (total so far: 5380)
+10:39:11 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 271: 20 records (total so far: 5440)
+10:39:11 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 269: 20 records (total so far: 5400)
+10:39:12 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 272: 20 records (total so far: 5460)
+10:39:12 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 270: 20 records (total so far: 5420)
+10:39:12 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 273: 20 records (total so far: 5480)
+10:39:13 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 271: 20 records (total so far: 5440)
+10:39:13 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 274: 20 records (total so far: 5500)
+10:39:15 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 272: 20 records (total so far: 5460)
+10:39:15 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 275: 20 records (total so far: 5520)
+10:39:15 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 273: 20 records (total so far: 5480)
+10:39:16 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 276: 20 records (total so far: 5540)
+10:39:16 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 274: 20 records (total so far: 5500)
+10:39:16 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 277: 20 records (total so far: 5560)
+10:39:17 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 275: 20 records (total so far: 5520)
+10:39:17 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 278: 20 records (total so far: 5580)
+10:39:18 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 276: 20 records (total so far: 5540)
+10:39:18 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 279: 20 records (total so far: 5600)
+10:39:19 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 277: 20 records (total so far: 5560)
+10:39:19 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 280: 20 records (total so far: 5620)
+10:39:20 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 278: 20 records (total so far: 5580)
+10:39:20 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 281: 20 records (total so far: 5640)
+10:39:20 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 279: 20 records (total so far: 5600)
+10:39:21 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 282: 20 records (total so far: 5660)
+10:39:21 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 280: 20 records (total so far: 5620)
+10:39:22 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 283: 20 records (total so far: 5680)
+10:39:22 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 281: 20 records (total so far: 5640)
+10:39:22 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 284: 20 records (total so far: 5700)
+10:39:23 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 282: 20 records (total so far: 5660)
+10:39:23 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 285: 20 records (total so far: 5720)
+10:39:24 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 283: 20 records (total so far: 5680)
+10:39:24 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 286: 20 records (total so far: 5740)
+10:39:25 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 284: 20 records (total so far: 5700)
+10:39:25 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 287: 20 records (total so far: 5760)
+10:39:25 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 285: 20 records (total so far: 5720)
+10:39:26 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 288: 20 records (total so far: 5780)
+10:39:26 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 286: 20 records (total so far: 5740)
+10:39:27 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 289: 20 records (total so far: 5800)
+10:39:27 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 287: 20 records (total so far: 5760)
+10:39:28 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 290: 20 records (total so far: 5820)
+10:39:28 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 288: 20 records (total so far: 5780)
+10:39:28 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 291: 20 records (total so far: 5840)
+10:39:29 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 289: 20 records (total so far: 5800)
+10:39:29 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 292: 20 records (total so far: 5860)
+10:39:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 290: 20 records (total so far: 5820)
+10:39:30 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 293: 20 records (total so far: 5880)
+10:39:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 291: 20 records (total so far: 5840)
+10:39:31 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 294: 20 records (total so far: 5900)
+10:39:31 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 292: 20 records (total so far: 5860)
+10:39:32 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 295: 20 records (total so far: 5920)
+10:39:32 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 293: 20 records (total so far: 5880)
+10:39:33 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 296: 20 records (total so far: 5940)
+10:39:33 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 294: 20 records (total so far: 5900)
+10:39:34 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 297: 20 records (total so far: 5960)
+10:39:34 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 295: 20 records (total so far: 5920)
+10:39:34 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 298: 20 records (total so far: 5980)
+10:39:35 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 296: 20 records (total so far: 5940)
+10:39:35 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 299: 20 records (total so far: 6000)
+10:39:35 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 297: 20 records (total so far: 5960)
+10:39:36 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 300: 20 records (total so far: 6020)
+10:39:36 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 298: 20 records (total so far: 5980)
+10:39:37 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 301: 20 records (total so far: 6040)
+10:39:37 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 299: 20 records (total so far: 6000)
+10:39:38 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 302: 20 records (total so far: 6060)
+10:39:38 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 300: 20 records (total so far: 6020)
+10:39:39 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 303: 20 records (total so far: 6080)
+10:39:39 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 301: 20 records (total so far: 6040)
+10:39:40 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 304: 20 records (total so far: 6100)
+10:39:40 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 302: 20 records (total so far: 6060)
+10:39:40 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 305: 20 records (total so far: 6120)
+10:39:41 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 303: 20 records (total so far: 6080)
+10:39:41 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 306: 20 records (total so far: 6140)
+10:39:41 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 304: 20 records (total so far: 6100)
+10:39:42 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 307: 20 records (total so far: 6160)
+10:39:42 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 305: 20 records (total so far: 6120)
+10:39:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 308: 20 records (total so far: 6180)
+10:39:43 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 306: 20 records (total so far: 6140)
+10:39:44 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 309: 20 records (total so far: 6200)
+10:39:44 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 307: 20 records (total so far: 6160)
+10:39:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 310: 20 records (total so far: 6220)
+10:39:45 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 308: 20 records (total so far: 6180)
+10:39:46 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 311: 20 records (total so far: 6240)
+10:39:46 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 309: 20 records (total so far: 6200)
+10:39:47 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 312: 20 records (total so far: 6260)
+10:39:47 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 310: 20 records (total so far: 6220)
+10:39:47 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 313: 20 records (total so far: 6280)
+10:39:47 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 311: 20 records (total so far: 6240)
+10:39:48 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 312: 20 records (total so far: 6260)
+10:39:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 314: 20 records (total so far: 6300)
+10:39:49 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 313: 20 records (total so far: 6280)
+10:39:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 315: 20 records (total so far: 6320)
+10:39:50 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 314: 20 records (total so far: 6300)
+10:39:50 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 316: 20 records (total so far: 6340)
+10:39:51 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 315: 20 records (total so far: 6320)
+10:39:51 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 317: 20 records (total so far: 6360)
+10:39:52 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 316: 20 records (total so far: 6340)
+10:39:52 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 318: 20 records (total so far: 6380)
+10:39:53 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 317: 20 records (total so far: 6360)
+10:39:53 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 319: 20 records (total so far: 6400)
+10:39:53 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 318: 20 records (total so far: 6380)
+10:39:53 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 320: 20 records (total so far: 6420)
+10:39:54 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 319: 20 records (total so far: 6400)
+10:39:54 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 321: 20 records (total so far: 6440)
+10:39:55 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 320: 20 records (total so far: 6420)
+10:39:55 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 322: 20 records (total so far: 6460)
+10:39:56 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 321: 20 records (total so far: 6440)
+10:39:56 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 323: 20 records (total so far: 6480)
+10:39:57 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 322: 20 records (total so far: 6460)
+10:39:57 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 324: 20 records (total so far: 6500)
+10:39:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 323: 20 records (total so far: 6480)
+10:39:58 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 325: 20 records (total so far: 6520)
+10:39:58 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 324: 20 records (total so far: 6500)
+10:39:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 326: 20 records (total so far: 6540)
+10:39:59 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 325: 20 records (total so far: 6520)
+10:40:00 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 327: 20 records (total so far: 6560)
+10:40:00 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 326: 20 records (total so far: 6540)
+10:40:00 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 328: 20 records (total so far: 6580)
+10:40:01 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 327: 20 records (total so far: 6560)
+10:40:01 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 329: 20 records (total so far: 6600)
+10:40:02 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 328: 20 records (total so far: 6580)
+10:40:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 330: 20 records (total so far: 6620)
+10:40:03 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 329: 20 records (total so far: 6600)
+10:40:03 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 331: 20 records (total so far: 6640)
+10:40:04 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 330: 20 records (total so far: 6620)
+10:40:04 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 332: 20 records (total so far: 6660)
+10:40:04 [INFO] core.chiyu: [Chiyu - Mesin 2] Page 331: 20 records (total so far: 6640)
+10:40:05 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Page 333: 20 records (total so far: 6680)
+10:44:18 [INFO] __main__: ==================================================
+10:44:18 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+10:44:18 [INFO] __main__: ==================================================
+10:44:30 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+10:44:30 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+10:44:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+10:44:30 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+10:44:30 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+10:44:30 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+10:44:30 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+10:44:30 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+10:45:10 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+10:46:27 [INFO] core.chiyu: [Chiyu - Mesin 1] Filter tanggal: 9892 record
+10:46:27 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+10:46:28 [INFO] core.data_processor: Filter date: 9892/9892 records (None s/d None)
+10:46:28 [INFO] core.data_processor: Grouped: 9892 raw records → 3326 daily summaries
+10:47:50 [INFO] core.data_processor: Filter date: 9892/9892 records (None s/d None)
+10:47:50 [INFO] core.data_processor: Grouped: 9892 raw records → 3326 daily summaries
+10:48:59 [INFO] core.data_processor: Filter date: 9892/9892 records (2026-06-01 s/d 2026-06-27)
+10:48:59 [INFO] core.data_processor: Grouped: 46 raw records → 21 daily summaries
+10:49:36 [INFO] core.exporter: Excel exported: D:\Project Scan\data\exports\absensi_20260627_104936.xlsx (21 rows)
+10:51:24 [INFO] core.data_processor: Filter date: 9892/9892 records (2026-06-01 s/d 2026-06-27)
+10:51:24 [INFO] core.data_processor: Grouped: 9892 raw records → 3326 daily summaries
+10:51:39 [INFO] core.data_processor: Filter date: 9892/9892 records (2026-06-01 s/d 2026-06-27)
+10:51:39 [INFO] core.data_processor: Grouped: 74 raw records → 22 daily summaries
+10:54:38 [INFO] __main__: ==================================================
+10:54:38 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+10:54:38 [INFO] __main__: ==================================================
+10:54:45 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+10:54:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+10:54:45 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+10:54:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+10:54:45 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+10:54:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+10:54:45 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+10:54:45 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+10:54:51 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+10:56:11 [INFO] core.chiyu: [Chiyu - Mesin 1] Filter tanggal: 9892 record
+10:56:11 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+10:56:11 [INFO] core.data_processor: Filter date: 9892/9892 records (None s/d None)
+10:56:11 [INFO] core.data_processor: Grouped: 9892 raw records → 3326 daily summaries
+10:57:06 [INFO] core.data_processor: Filter date: 9892/9892 records (2026-06-01 s/d 2026-06-27)
+10:57:06 [INFO] core.data_processor: Grouped: 105 raw records → 25 daily summaries
+10:57:13 [INFO] core.data_processor: Filter date: 9892/9892 records (2026-06-01 s/d 2026-06-28)
+10:57:13 [INFO] core.data_processor: Grouped: 105 raw records → 25 daily summaries
+10:57:20 [INFO] core.data_processor: Filter date: 9892/9892 records (2026-06-01 s/d 2026-06-27)
+10:57:20 [INFO] core.data_processor: Grouped: 105 raw records → 25 daily summaries
+10:57:25 [INFO] core.data_processor: Filter date: 9449/9892 records (2026-06-01 s/d 2026-06-25)
+10:57:25 [INFO] core.data_processor: Grouped: 102 raw records → 24 daily summaries
+10:57:33 [INFO] core.data_processor: Filter date: 9892/9892 records (2026-06-01 s/d 2026-06-27)
+10:57:33 [INFO] core.data_processor: Grouped: 105 raw records → 25 daily summaries
+11:01:27 [INFO] __main__: ==================================================
+11:01:27 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+11:01:27 [INFO] __main__: ==================================================
+11:01:48 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+11:01:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+11:01:48 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+11:01:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:01:48 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+11:01:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+11:01:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+11:01:48 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+11:01:54 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+11:02:19 [INFO] core.chiyu: [Chiyu - Mesin 2] Filter tanggal: 2866 record
+11:02:19 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+11:02:19 [INFO] core.data_processor: Filter date: 2866/2866 records (None s/d None)
+11:02:19 [INFO] core.data_processor: Grouped: 2866 raw records → 961 daily summaries
+11:03:15 [INFO] core.data_processor: Filter date: 2866/2866 records (2026-06-01 s/d 2026-06-27)
+11:03:15 [INFO] core.data_processor: Grouped: 19 raw records → 6 daily summaries
+11:19:01 [INFO] __main__: ==================================================
+11:19:01 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+11:19:01 [INFO] __main__: ==================================================
+11:19:05 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+11:19:05 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+11:19:05 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+11:19:05 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:19:05 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+11:19:05 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+11:19:05 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+11:19:05 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+11:19:06 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+11:19:06 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+11:19:06 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+11:19:06 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:19:06 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+11:19:07 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+11:19:07 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+11:19:07 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+11:19:18 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+11:19:18 [INFO] core.chiyu: [Chiyu - Mesin 2] Search: 6/1/2026 - 6/27/2026
+11:20:29 [INFO] core.chiyu: [Chiyu - Mesin 2] Search response: 5967909 bytes
+11:20:31 [INFO] core.chiyu: [Chiyu - Mesin 2] Search berhasil: 9206 record (Total 9206 Record)
+11:20:31 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+11:20:31 [INFO] core.data_processor: Filter date: 9206/9206 records (None s/d None)
+11:20:31 [INFO] core.data_processor: Grouped: 9206 raw records → 3158 daily summaries
+11:21:14 [INFO] core.data_processor: Filter date: 9206/9206 records (2026-06-01 s/d 2026-06-27)
+11:21:14 [INFO] core.data_processor: Grouped: 66 raw records → 20 daily summaries
+11:36:46 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+11:36:47 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Search: 6/1/2026 - 6/27/2026
+11:37:25 [INFO] core.data_processor: Filter date: 9206/9206 records (2026-06-01 s/d 2026-06-27)
+11:37:25 [INFO] core.data_processor: Grouped: 9206 raw records → 3158 daily summaries
+11:37:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Search response: 5249009 bytes
+11:37:51 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Search berhasil: 8106 record (Total 8106 Record)
+11:37:51 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+11:37:51 [INFO] core.data_processor: Filter date: 8106/8106 records (2026-06-01 s/d 2026-06-27)
+11:37:51 [INFO] core.data_processor: Grouped: 8106 raw records → 3329 daily summaries
+11:39:44 [INFO] core.data_processor: Filter date: 8106/8106 records (2026-06-01 s/d 2026-06-27)
+11:39:44 [INFO] core.data_processor: Grouped: 54 raw records → 20 daily summaries
+11:45:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:45:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search: 6/1/2026 - 6/27/2026
+11:45:44 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search response: 2514 bytes
+11:45:44 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search berhasil: 0 record (Total 0 Record)
+11:45:44 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+11:45:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:45:48 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search: 6/1/2026 - 6/27/2026
+11:45:50 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search response: 2514 bytes
+11:45:50 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search berhasil: 0 record (Total 0 Record)
+11:45:50 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+11:47:02 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+11:47:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+11:47:02 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+11:47:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:47:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+11:47:02 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+11:47:02 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+11:47:02 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+11:47:08 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:47:08 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search: 6/1/2026 - 6/27/2026
+11:47:09 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search response: 2514 bytes
+11:47:09 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search berhasil: 0 record (Total 0 Record)
+11:47:09 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+11:49:33 [INFO] __main__: ==================================================
+11:49:33 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+11:49:33 [INFO] __main__: ==================================================
+11:49:36 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+11:49:36 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+11:49:36 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+11:49:36 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:49:36 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+11:49:36 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+11:49:36 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+11:49:36 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+11:49:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:49:43 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search: 6/1/2026 - 6/27/2026
+11:50:19 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search response: 3069761 bytes
+11:50:21 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Search berhasil: 4801 record (Total 4801 Record)
+11:50:21 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Session closed
+11:50:21 [INFO] core.data_processor: Filter date: 4801/4801 records (None s/d None)
+11:50:21 [INFO] core.data_processor: Grouped: 4801 raw records → 1618 daily summaries
+11:51:00 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:51:00 [INFO] core.data_processor: Grouped: 0 raw records → 0 daily summaries
+11:51:02 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:51:02 [INFO] core.data_processor: Grouped: 0 raw records → 0 daily summaries
+11:51:06 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:51:06 [INFO] core.data_processor: Grouped: 0 raw records → 0 daily summaries
+11:51:09 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:51:09 [INFO] core.data_processor: Grouped: 0 raw records → 0 daily summaries
+11:51:24 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:51:24 [INFO] core.data_processor: Grouped: 90 raw records → 19 daily summaries
+11:52:08 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:52:08 [INFO] core.data_processor: Grouped: 77 raw records → 21 daily summaries
+11:52:11 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:52:11 [INFO] core.data_processor: Grouped: 77 raw records → 21 daily summaries
+11:52:17 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:52:17 [INFO] core.data_processor: Grouped: 4801 raw records → 1618 daily summaries
+11:52:18 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:52:18 [INFO] core.data_processor: Grouped: 77 raw records → 21 daily summaries
+11:53:15 [INFO] core.data_processor: Filter date: 4801/4801 records (2026-06-01 s/d 2026-06-27)
+11:53:15 [INFO] core.data_processor: Grouped: 77 raw records → 21 daily summaries
