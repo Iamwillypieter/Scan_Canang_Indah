@@ -1,6 +1,6 @@
 import customtkinter as ctk
 
-from config import APP_NAME, APP_VERSION, WINDOW_WIDTH, WINDOW_HEIGHT
+from config import APP_NAME, APP_VERSION, WINDOW_WIDTH, WINDOW_HEIGHT, APP_MODE, IS_DEVELOPMENT
 from ui.frames.connection_frame import ConnectionFrame
 from ui.frames.data_frame import DataViewFrame
 from ui.frames.export_frame import ExportFrame
@@ -35,7 +35,7 @@ class App(ctk.CTk):
         self.tabview.grid(row=1, column=0, padx=15, pady=(0, 15), sticky="nsew")
 
         # Tab 1: Multi-device Connection
-        tab_conn = self.tabview.add("🔌 Koneksi (4 Mesin)")
+        tab_conn = self.tabview.add("🔌 Koneksi (5 Mesin)")
         tab_conn.grid_columnconfigure(0, weight=1)
         tab_conn.grid_rowconfigure(0, weight=1)
 
@@ -81,6 +81,19 @@ class App(ctk.CTk):
             font=ctk.CTkFont(size=11),
             text_color="gray",
         ).pack(side="left", padx=(10, 0), pady=(5, 0))
+
+        # Mode badge
+        if IS_DEVELOPMENT:
+            ctk.CTkLabel(
+                header,
+                text="🛠️ DEV MODE",
+                font=ctk.CTkFont(size=11, weight="bold"),
+                text_color="#F59E0B",
+                fg_color="#292524",
+                corner_radius=6,
+                padx=8,
+                pady=2,
+            ).pack(side="left", padx=(12, 0), pady=(4, 0))
 
     def _create_statusbar(self):
         statusbar_frame = ctk.CTkFrame(self, fg_color="transparent")

@@ -29,8 +29,12 @@ def setup_logging():
 def main():
     setup_logging()
     logger = logging.getLogger(__name__)
+
+    from config import APP_MODE, IS_DEVELOPMENT
+
     logger.info("=" * 50)
     logger.info("Aplikasi Absensi Reader - Multi Device Started")
+    logger.info(f"Mode: {APP_MODE.upper()} {'(dummy data)' if IS_DEVELOPMENT else '(mesin asli)'}")
     logger.info("=" * 50)
 
     from ui.app import App

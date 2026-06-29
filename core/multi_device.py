@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Callable, Optional
 from dataclasses import dataclass
 
-from config import MACHINES, MachineConfig, MachineType
+from config import MACHINES, MachineConfig, MachineType, IS_DEVELOPMENT
 from core.machine import (
     BaseMachine,
     AttendanceRecord,
@@ -14,12 +14,20 @@ from core.machine import (
 )
 from core.biotronix import BiotronixMachine
 from core.chiyu import ChiyuMachine
+from core.mock_machine import MockMachine
 
 logger = logging.getLogger(__name__)
 
 
 def create_machine(config: MachineConfig) -> BaseMachine:
-    """Factory functon: buat instance mesin sesuai tipe."""
+    """
+    Factory function: buat instance mesin sesuai tipe dan mode.
+    Development mode → selalu MockMachine (tanpa koneksi jaringan).
+    Production mode  → mesin asli (Biotronix/Chiyu via LAN).
+    """
+    if IS_DEVELOPMENT:
+        return MockMachine(config)
+
     if config.machine_type == MachineType.BIOTRONIX:
         return BiotronixMachine(config)
     elif config.machine_type == MachineType.CHIYU:
@@ -48,7 +56,12 @@ class MultiDeviceManager:
             for config in self._configs:
                 if not config.enabled:
                     continue
-                future = executor.submit(ping_host, config.ip)
+                if IS_DEVELOPMENT:
+                    future = executor.submit(
+                        lambda ip=config.ip: (True, f"[MOCK] Host {ip} reachable (simulated)")
+                    )
+                else:
+                    future = executor.submit(ping_host, config.ip)
                 futures[future] = config
 
             for future in as_completed(futures):

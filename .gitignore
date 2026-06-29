@@ -1,0 +1,21 @@
+# Environment config (contains mode setting)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Data & Logs
+data/exports/*.xlsx
+data/exports/*.csv
+logs/*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+dist/
+build/
+*.spec

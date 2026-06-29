@@ -2,6 +2,23 @@ import os
 from dataclasses import dataclass, field
 from enum import Enum
 
+# ─── Load .env file ──────────────────────────────────────────
+# Environment variable dari system/bat file lebih prioritas dari .env
+_ENV_FILE = os.path.join(os.path.dirname(__file__), ".env")
+if os.path.exists(_ENV_FILE):
+    with open(_ENV_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, value = line.partition("=")
+                # setdefault = hanya set jika BELUM ada di environment
+                os.environ.setdefault(key.strip(), value.strip())
+
+# ─── Environment Mode ────────────────────────────────────────
+APP_MODE = os.environ.get("APP_MODE", "production").lower().strip()
+IS_DEVELOPMENT = APP_MODE == "development"
+IS_PRODUCTION = APP_MODE == "production"
+
 # ─── Aplikasi ────────────────────────────────────────────────
 APP_NAME = "Absensi Canang Indah"
 APP_VERSION = "3.0.0"

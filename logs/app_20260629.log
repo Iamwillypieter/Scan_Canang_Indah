@@ -99,3 +99,28 @@
 10:20:22 [INFO] __main__: ==================================================
 10:20:22 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
 10:20:22 [INFO] __main__: ==================================================
+10:57:09 [INFO] __main__: ==================================================
+10:57:09 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+10:57:09 [INFO] __main__: ==================================================
+11:05:43 [INFO] __main__: ==================================================
+11:05:43 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+11:05:43 [INFO] __main__: Mode: PRODUCTION (mesin asli)
+11:05:43 [INFO] __main__: ==================================================
+11:05:49 [INFO] core.chiyu: [Chiyu - Mesin 1] Attempt 1/3 connecting to http://192.168.3.83:80...
+11:05:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Attempt 1/3 connecting to http://192.168.3.85:80...
+11:05:49 [INFO] core.chiyu: [Chiyu - Mesin 2] Attempt 1/3 connecting to http://192.168.3.86:80...
+11:05:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1/3 connecting to http://192.168.3.87:80...
+11:05:49 [INFO] core.chiyu: [Chiyu - Mesin 3] Attempt 1/3 connecting to http://192.168.3.240:80...
+11:05:49 [INFO] core.chiyu: [Chiyu - Mesin 3] Session closed
+11:05:49 [INFO] core.chiyu: [Chiyu - Mesin 2] Session closed
+11:05:49 [INFO] core.chiyu: [Chiyu - Mesin 1] Session closed
+11:05:49 [INFO] core.chiyu: [Biotronix 6600 - Mesin 1] Session closed
+11:05:57 [WARNING] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 1: timeout
+11:05:59 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 2/3 connecting to http://192.168.3.87:80...
+11:06:07 [WARNING] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 2: timeout
+11:06:09 [INFO] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 3/3 connecting to http://192.168.3.87:80...
+11:06:17 [WARNING] core.chiyu: [Biotronix 6600 - Mesin 2] Attempt 3: timeout
+11:06:25 [INFO] __main__: ==================================================
+11:06:25 [INFO] __main__: Aplikasi Absensi Reader - Multi Device Started
+11:06:25 [INFO] __main__: Mode: DEVELOPMENT (dummy data)
+11:06:25 [INFO] __main__: ==================================================
