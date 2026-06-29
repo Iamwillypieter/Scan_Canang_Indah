@@ -1,7 +1,3 @@
-"""
-Module pemrosesan data absensi.
-Filter, sort, grouping First IN / Last OUT, dan transformasi data.
-"""
 import logging
 from collections import defaultdict
 from dataclasses import dataclass
@@ -17,10 +13,6 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class DailySummaryRecord:
-    """
-    Hasil grouping data per Employee per Tanggal.
-    Berisi First IN dan Last OUT beserta terminal/door info.
-    """
     no: int
     card_id: str
     employee_id: str
@@ -29,10 +21,10 @@ class DailySummaryRecord:
     date: date
     first_in: Optional[datetime]
     last_out: Optional[datetime]
-    terminal_first: str     # Nama mesin saat First IN
-    terminal_last: str      # Nama mesin saat Last OUT
-    door_first: str         # Door saat First IN
-    door_last: str          # Door saat Last OUT
+    terminal_first: str     # Nama mesin First IN
+    terminal_last: str      # Nama mesin Last OUT
+    door_first: str         # Door First IN
+    door_last: str          # Door Last OUT
 
     @property
     def first_in_str(self) -> str:
@@ -50,8 +42,6 @@ class DailySummaryRecord:
 # ─── Data Processor ──────────────────────────────────────────
 
 class DataProcessor:
-    """Pemroses data attendance: filter, sort, grouping, statistik."""
-
     def __init__(self, records: list[AttendanceRecord]):
         self._records = records
 
@@ -66,18 +56,12 @@ class DataProcessor:
         from_date: Optional[date] = None,
         to_date: Optional[date] = None,
     ) -> list[AttendanceRecord]:
-        """
-        Filter records berdasarkan rentang tanggal (INCLUSIVE di kedua sisi).
-        Perbandingan dilakukan pada level DATE ONLY (tanpa jam/menit/detik)
-        sehingga semua log pada to_date (jam 00:00 sampai 23:59:59) tetap masuk.
-        """
         filtered = self._records
 
         if from_date:
             filtered = [r for r in filtered if r.timestamp.date() >= from_date]
 
         if to_date:
-            # Inclusive: data pada to_date jam berapapun tetap masuk
             filtered = [r for r in filtered if r.timestamp.date() <= to_date]
 
         logger.info(
@@ -89,7 +73,6 @@ class DataProcessor:
     def filter_by_card_id(
         self, card_id: str, records: Optional[list[AttendanceRecord]] = None
     ) -> list[AttendanceRecord]:
-        """Filter records berdasarkan Card ID (partial match)."""
         source = records if records is not None else self._records
         card_id_lower = card_id.strip().lower()
         return [r for r in source if card_id_lower in r.card_id.lower()]
@@ -97,7 +80,6 @@ class DataProcessor:
     def filter_by_employee_id(
         self, employee_id: str, records: Optional[list[AttendanceRecord]] = None
     ) -> list[AttendanceRecord]:
-        """Filter records berdasarkan Employee ID (partial match)."""
         source = records if records is not None else self._records
         emp_lower = employee_id.strip().lower()
         return [r for r in source if emp_lower in r.user_id.lower()]
@@ -108,18 +90,6 @@ class DataProcessor:
     def group_first_in_last_out(
         records: list[AttendanceRecord],
     ) -> list[DailySummaryRecord]:
-        """
-        Kelompokkan data berdasarkan Employee ID + Tanggal.
-        Hitung First IN (waktu paling awal) dan Last OUT (waktu paling akhir).
-        
-        Algoritma:
-        1. Group by (user_id, date)
-        2. Untuk setiap group:
-           - First IN = record dengan timestamp terkecil
-           - Last OUT = record dengan timestamp terbesar
-           - Jika hanya ada 1 record, First IN = Last OUT = record tersebut
-        3. Catat terminal dan door dari record First dan Last.
-        """
         # Group by (user_id, date)
         groups: dict[tuple[str, date], list[AttendanceRecord]] = defaultdict(list)
 
@@ -171,7 +141,6 @@ class DataProcessor:
     def get_statistics(
         self, records: Optional[list[AttendanceRecord]] = None
     ) -> dict:
-        """Hitung statistik dari records."""
         source = records if records is not None else self._records
 
         if not source:
@@ -202,5 +171,4 @@ class DataProcessor:
     def sort_by_timestamp(
         records: list[AttendanceRecord], ascending: bool = True
     ) -> list[AttendanceRecord]:
-        """Sort records berdasarkan timestamp."""
         return sorted(records, key=lambda r: r.timestamp, reverse=not ascending)

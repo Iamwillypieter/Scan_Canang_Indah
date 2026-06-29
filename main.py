@@ -1,17 +1,9 @@
-"""
-Aplikasi Desktop Tarik Data Absensi - Multi Device
-Entry point aplikasi.
-
-Mendukung:
-- 2x Mesin Biotronix (ZKTeco TCP protocol, port 4370)
-- 2x Mesin Chiyu (HTTP/CGI web interface, port 80)
-"""
 import sys
 import os
 import logging
 from datetime import datetime
 
-# Tambahkan root project ke path
+# Menambahkan root project ke path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config import LOG_FOLDER

@@ -1,6 +1,3 @@
-"""
-Frame multi-device: status mesin, filter tanggal, pilih mesin, tarik data.
-"""
 import threading
 from datetime import date, datetime
 from typing import Callable
@@ -13,8 +10,6 @@ from core.multi_device import MultiDeviceManager
 
 
 class MachineStatusCard(ctk.CTkFrame):
-    """Widget card kecil untuk status satu mesin + checkbox pilih."""
-
     def __init__(self, parent, name: str, ip: str, port: int, machine_type: MachineType):
         super().__init__(parent, border_width=1, border_color="gray40")
         self.grid_columnconfigure(2, weight=1)
@@ -62,7 +57,6 @@ class MachineStatusCard(ctk.CTkFrame):
         self.status_label.grid(row=0, column=3, rowspan=2, padx=8, pady=8, sticky="e")
 
     def set_status(self, status: ConnectionStatus, message: str = ""):
-        """Update tampilan status card."""
         status_config = {
             ConnectionStatus.DISCONNECTED: ("⚪", "gray", "Idle"),
             ConnectionStatus.CONNECTING: ("🟡", "#F59E0B", "Connecting..."),
@@ -76,7 +70,6 @@ class MachineStatusCard(ctk.CTkFrame):
 
 
 class ConnectionFrame(ctk.CTkFrame):
-    """Frame: status 4 mesin, filter tanggal, pilih mesin, tarik data."""
 
     def __init__(self, parent, on_data_received: Callable):
         super().__init__(parent, fg_color="transparent")
@@ -89,7 +82,7 @@ class ConnectionFrame(ctk.CTkFrame):
         self._build_ui()
 
     def _build_ui(self):
-        # ─── Machine Status Cards (with checkboxes) ───────
+        # ─── Machine Status Cards ───────
         status_frame = ctk.CTkFrame(self)
         status_frame.grid(row=0, column=0, sticky="ew", pady=(0, 8))
         status_frame.grid_columnconfigure(0, weight=1)
@@ -253,12 +246,6 @@ class ConnectionFrame(ctk.CTkFrame):
     # ─── Date Parsing ────────────────────────────────────
 
     def _parse_dates(self) -> tuple:
-        """
-        Parse input tanggal dari UI.
-        Mendukung format: YYYY-MM-DD, YYYY-M-D, DD/MM/YYYY, D/M/YYYY
-        Returns: (start_date_tuple, end_date_tuple, error_msg)
-        start/end_date_tuple = (month, day, year_2digit) untuk Chiyu CGI
-        """
         start_str = self.start_date_entry.get().strip()
         end_str = self.end_date_entry.get().strip()
 
@@ -284,7 +271,6 @@ class ConnectionFrame(ctk.CTkFrame):
 
     @staticmethod
     def _flexible_parse_date(s: str):
-        """Parse tanggal dengan berbagai format yang mungkin diinput user."""
         from datetime import datetime as dt
         formats = [
             "%Y-%m-%d",    # 2026-06-27
@@ -385,7 +371,6 @@ class ConnectionFrame(ctk.CTkFrame):
     # ─── Fetch Data (with date range + machine selection) ─
 
     def _fetch_data(self):
-        """Tarik data dari mesin terpilih dengan filter tanggal."""
         selected = self._get_selected_machines()
         if not selected:
             self._log("⚠️ Tidak ada mesin yang dipilih. Centang minimal 1 mesin.")

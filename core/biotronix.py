@@ -1,7 +1,3 @@
-"""
-Handler koneksi mesin Biotronix (protokol ZKTeco via pyzk).
-Mendukung TCP dan UDP (auto-detect), dengan retry dan berbagai fallback.
-"""
 import logging
 import time
 import socket
@@ -14,7 +10,7 @@ from core.machine import BaseMachine, AttendanceRecord, ConnectionStatus
 
 logger = logging.getLogger(__name__)
 
-# Strategi koneksi yang akan dicoba berurutan
+# koneksi berurutan
 CONNECTION_STRATEGIES = [
     {"force_udp": True,  "ommit_ping": True,  "desc": "UDP + skip ping"},
     {"force_udp": True,  "ommit_ping": False, "desc": "UDP + ping"},
@@ -24,12 +20,6 @@ CONNECTION_STRATEGIES = [
 
 
 class BiotronixMachine(BaseMachine):
-    """
-    Koneksi ke mesin Biotronix via protokol ZKTeco.
-    Mencoba berbagai strategi koneksi (UDP/TCP, dengan/tanpa ping)
-    untuk menangani variasi firmware dan model mesin.
-    """
-
     def __init__(self, config: MachineConfig):
         super().__init__(config)
         self._zk: Optional[ZK] = None
@@ -37,17 +27,7 @@ class BiotronixMachine(BaseMachine):
         self._working_strategy: Optional[dict] = None
 
     def connect(self) -> tuple[bool, str]:
-        """
-        Connect ke mesin Biotronix.
-        Mencoba beberapa strategi koneksi secara berurutan:
-        1. UDP + skip ping (paling umum untuk mesin baru)
-        2. UDP + ping
-        3. TCP + skip ping
-        4. TCP + ping
-        """
         self.status = ConnectionStatus.CONNECTING
-
-        # Jika sudah pernah berhasil, pakai strategi yang sama
         strategies = (
             [self._working_strategy] if self._working_strategy
             else CONNECTION_STRATEGIES
@@ -64,7 +44,6 @@ class BiotronixMachine(BaseMachine):
                         f"via {strategy['desc']} to {self.ip}:{self.port}..."
                     )
 
-                    # Cek port dulu sebelum coba connect (quick fail)
                     if not strategy["force_udp"]:
                         if not self._check_port_open():
                             raise ConnectionError(
@@ -81,11 +60,9 @@ class BiotronixMachine(BaseMachine):
                     )
                     self._conn = self._zk.connect()
 
-                    # Verifikasi koneksi berhasil
                     firmware = self._conn.get_firmware_version()
                     serial = self._conn.get_serialnumber()
 
-                    # Berhasil! Simpan strategi yang berhasil
                     self._working_strategy = strategy
                     self.status = ConnectionStatus.CONNECTED
 
@@ -106,16 +83,13 @@ class BiotronixMachine(BaseMachine):
                         f"[{self.name}] {strategy['desc']} attempt {attempt} failed: {e}"
                     )
 
-                    # Cleanup
                     self._cleanup()
 
                     if attempt < MAX_RETRIES:
                         time.sleep(RETRY_DELAY)
 
-            # Strategi ini gagal semua, lanjut ke strategi berikutnya
             logger.info(f"[{self.name}] Strategy '{strategy['desc']}' exhausted, trying next...")
 
-        # SEMUA strategi gagal
         self.status = ConnectionStatus.ERROR
         error_msg = (
             f"Gagal terhubung ke {self.name} ({self.ip}:{self.port})\n"
@@ -136,7 +110,6 @@ class BiotronixMachine(BaseMachine):
         return False, error_msg
 
     def _check_port_open(self) -> bool:
-        """Quick check apakah TCP port bisa diakses."""
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.settimeout(3)
@@ -147,7 +120,6 @@ class BiotronixMachine(BaseMachine):
             return False
 
     def _cleanup(self):
-        """Cleanup connection objects."""
         try:
             if self._conn:
                 self._conn.disconnect()
@@ -157,7 +129,6 @@ class BiotronixMachine(BaseMachine):
         self._zk = None
 
     def disconnect(self):
-        """Tutup koneksi ke mesin Biotronix."""
         if self._conn:
             try:
                 self._conn.disconnect()
@@ -170,16 +141,12 @@ class BiotronixMachine(BaseMachine):
                 self.status = ConnectionStatus.DISCONNECTED
 
     def test_connection(self) -> tuple[bool, str]:
-        """Test koneksi: connect → info → disconnect."""
         success, msg = self.connect()
         if success:
             self.disconnect()
         return success, msg
 
     def get_attendance_logs(self) -> tuple[list[AttendanceRecord], str]:
-        """
-        Tarik semua attendance log dari mesin Biotronix.
-        """
         if not self._conn:
             success, msg = self.connect()
             if not success:
@@ -188,11 +155,9 @@ class BiotronixMachine(BaseMachine):
         self.status = ConnectionStatus.FETCHING
 
         try:
-            # Disable device sementara
             self._conn.disable_device()
             logger.info(f"[{self.name}] Device disabled untuk baca data...")
 
-            # Ambil user list untuk mapping nama
             users = self._conn.get_users()
             user_map = {}
             for user in users:
@@ -200,10 +165,8 @@ class BiotronixMachine(BaseMachine):
 
             logger.info(f"[{self.name}] {len(user_map)} users loaded")
 
-            # Ambil attendance log
             raw_attendance = self._conn.get_attendance()
 
-            # Enable device kembali
             self._conn.enable_device()
             logger.info(f"[{self.name}] Device enabled kembali")
 
@@ -211,7 +174,6 @@ class BiotronixMachine(BaseMachine):
                 self.status = ConnectionStatus.CONNECTED
                 return [], f"[{self.name}] Tidak ada data attendance di mesin."
 
-            # Konversi ke AttendanceRecord
             records = []
             for att in raw_attendance:
                 record = AttendanceRecord(

@@ -1,7 +1,3 @@
-"""
-Module diagnostik koneksi jaringan.
-Menyediakan checklist otomatis untuk troubleshooting "Gagal terhubung ke mesin".
-"""
 import logging
 import socket
 import subprocess
@@ -15,7 +11,6 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class DiagnosticResult:
-    """Hasil satu step diagnostik."""
     step: str
     passed: bool
     message: str
@@ -23,17 +18,6 @@ class DiagnosticResult:
 
 
 def run_diagnostics(config: MachineConfig) -> list[DiagnosticResult]:
-    """
-    Jalankan checklist diagnostik lengkap untuk satu mesin.
-    
-    Checklist:
-    1. Ping host (ICMP reachability)
-    2. Port open check (TCP socket connect)
-    3. Protocol-specific test (ZKTeco handshake / HTTP response)
-    4. Network interface check
-    
-    Returns: List of DiagnosticResult
-    """
     results = []
 
     # ─── Step 1: Ping ─────────────────────────────────────
@@ -181,10 +165,6 @@ def _check_tcp_response(ip: str, port: int) -> DiagnosticResult:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(CONNECTION_TIMEOUT)
         sock.connect((ip, port))
-
-        # Kirim ZKTeco handshake awal (connect command)
-        # ZK protocol: header + command ID
-        # Ini hanya test apakah socket bisa establish
         sock.close()
 
         return DiagnosticResult(

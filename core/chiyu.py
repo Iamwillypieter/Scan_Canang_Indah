@@ -1,13 +1,3 @@
-"""
-Handler koneksi mesin Chiyu (BF-660C dan sejenisnya).
-Mesin Chiyu menggunakan Web CGI interface di port 80.
-Data diambil via HTTP GET ke endpoint if.cgi dengan parsing HTML table.
-
-Referensi endpoint:
-- Homepage: http://<IP>/
-- Access Log: http://<IP>/if.cgi?redirect=AccLog.htm&failure=fail.htm&type=go_log_page&page=0
-- Search Log: http://<IP>/if.cgi?redirect=UserLog.htm&failure=fail.htm&type=search_user_log&...
-"""
 import logging
 import time
 import re
@@ -24,18 +14,12 @@ logger = logging.getLogger(__name__)
 
 
 class ChiyuMachine(BaseMachine):
-    """
-    Koneksi ke mesin Chiyu via HTTP CGI web interface.
-    Mesin Chiyu meng-expose data access log via halaman web (port 80).
-    """
-
     def __init__(self, config: MachineConfig):
         super().__init__(config)
         self._session: Optional[requests.Session] = None
         self._base_url = f"http://{config.ip}:{config.port}"
 
     def _create_session(self) -> requests.Session:
-        """Buat HTTP session dengan header yang sesuai."""
         session = requests.Session()
         session.headers.update({
             "User-Agent": (
@@ -50,10 +34,6 @@ class ChiyuMachine(BaseMachine):
         return session
 
     def connect(self) -> tuple[bool, str]:
-        """
-        Connect ke mesin Chiyu (buka session HTTP dan verifikasi aksesibilitas).
-        Jika mesin memerlukan login, gunakan username/password dari config.
-        """
         self.status = ConnectionStatus.CONNECTING
 
         for attempt in range(1, MAX_RETRIES + 1):
@@ -81,7 +61,6 @@ class ChiyuMachine(BaseMachine):
                     if not login_ok:
                         raise ConnectionError("Login gagal (username/password salah?)")
 
-                # Cek apakah ini halaman Chiyu yang valid
                 content = response.text.lower()
                 if "chiyu" in content or "bf-" in content or "access log" in content or "terminal" in content:
                     self.status = ConnectionStatus.CONNECTED
@@ -94,7 +73,6 @@ class ChiyuMachine(BaseMachine):
                     logger.info(f"[{self.name}] ✅ Connected via HTTP")
                     return True, msg
                 else:
-                    # Tetap dianggap berhasil jika HTTP 200
                     self.status = ConnectionStatus.CONNECTED
                     msg = (
                         f"Terhubung ke {self.name}\n"
@@ -136,7 +114,6 @@ class ChiyuMachine(BaseMachine):
         return False, error_msg
 
     def disconnect(self):
-        """Tutup HTTP session."""
         if self._session:
             try:
                 self._session.close()
@@ -147,7 +124,6 @@ class ChiyuMachine(BaseMachine):
         logger.info(f"[{self.name}] Session closed")
 
     def _needs_login(self, html: str) -> bool:
-        """Cek apakah halaman mengandung form login."""
         lower = html.lower()
         return (
             'type="password"' in lower
@@ -156,10 +132,6 @@ class ChiyuMachine(BaseMachine):
         )
 
     def _do_login(self) -> bool:
-        """
-        Login ke mesin Chiyu menggunakan username/password dari config.
-        Chiyu biasanya menggunakan HTTP Basic Auth atau form POST.
-        """
         username = self.config.username or "admin"
         password = self.config.web_password or "admin"
 
@@ -182,7 +154,6 @@ class ChiyuMachine(BaseMachine):
                 "submit": "Login",
             }
 
-            # Coba beberapa endpoint login umum Chiyu
             login_urls = [
                 f"{self._base_url}/login.cgi",
                 f"{self._base_url}/if.cgi",
@@ -208,18 +179,12 @@ class ChiyuMachine(BaseMachine):
             return False
 
     def test_connection(self) -> tuple[bool, str]:
-        """Test koneksi HTTP ke mesin Chiyu."""
         success, msg = self.connect()
         if success:
             self.disconnect()
         return success, msg
 
     def get_attendance_logs(self) -> tuple[list[AttendanceRecord], str]:
-        """
-        Tarik semua data attendance dari mesin Chiyu via HTTP.
-        Endpoint: if.cgi?redirect=AccLog.htm&type=go_log_page&page=N
-        Data di-parse dari HTML table per halaman (20 records/page).
-        """
         if not self._session:
             success, msg = self.connect()
             if not success:
@@ -228,7 +193,7 @@ class ChiyuMachine(BaseMachine):
         self.status = ConnectionStatus.FETCHING
         all_records = []
         page = 0
-        max_pages = 5000  # Safety limit (20 rec/page * 5000 = 100k max)
+        max_pages = 5000  
 
         try:
             while page <= max_pages:
@@ -265,7 +230,6 @@ class ChiyuMachine(BaseMachine):
                     break
 
                 page += 1
-                # Kecilkan beban ke mesin
                 time.sleep(0.3)
 
             self.status = ConnectionStatus.CONNECTED
@@ -295,18 +259,6 @@ class ChiyuMachine(BaseMachine):
         self, start_month: int, start_day: int, start_year: int,
         end_month: int, end_day: int, end_year: int
     ) -> tuple[list[AttendanceRecord], str]:
-        """
-        Tarik data attendance dengan filter tanggal menggunakan form search.
-        Endpoint: if.cgi?redirect=UserLog.htm&type=search_user_log&...
-        
-        PENTING: Endpoint search Chiyu mengembalikan SEMUA records yang cocok
-        dalam 1 response (tidak ada pagination). Jadi cukup 1 request.
-
-        Args:
-            start_month, start_day, start_year: Tanggal mulai
-            end_month, end_day, end_year: Tanggal akhir
-            (year format: 2 digit, misal 26 untuk 2026)
-        """
         if not self._session:
             success, msg = self.connect()
             if not success:
@@ -320,11 +272,11 @@ class ChiyuMachine(BaseMachine):
                 "redirect": "UserLog.htm",
                 "failure": "fail.htm",
                 "type": "search_user_log",
-                "UID": "",       # Kosong = semua user
-                "TID": "",       # Kosong = semua terminal
-                "dep": "0",      # All departments
-                "Fkey": "255",   # All function keys
-                "num": "0",      # No number filter
+                "UID": "",       
+                "TID": "",       
+                "dep": "0",      
+                "Fkey": "255",   
+                "num": "0",      
                 "start_month": str(start_month),
                 "start_date": str(start_day),
                 "start_year": str(start_year),
@@ -340,7 +292,6 @@ class ChiyuMachine(BaseMachine):
                 f"- {end_month}/{end_day}/20{end_year}"
             )
 
-            # Timeout lebih panjang karena mesin memproses query besar
             response = self._session.get(url, params=params, timeout=READ_TIMEOUT * 3)
             response.raise_for_status()
 
@@ -348,7 +299,6 @@ class ChiyuMachine(BaseMachine):
                 f"[{self.name}] Search response: {len(response.text)} bytes"
             )
 
-            # Parse semua records dari response
             records, total_str, _ = self._parse_access_log_page(response.text)
 
             self.status = ConnectionStatus.CONNECTED
@@ -375,13 +325,6 @@ class ChiyuMachine(BaseMachine):
     def _parse_access_log_page(
         self, html: str
     ) -> tuple[list[AttendanceRecord], str, bool]:
-        """
-        Parse halaman HTML Access Log mesin Chiyu.
-        Robust parser yang tidak kehilangan data.
-
-        Returns:
-            (records, total_info_string, has_next_page)
-        """
         records = []
         total_str = ""
         has_next = False
@@ -394,19 +337,15 @@ class ChiyuMachine(BaseMachine):
             if total_match:
                 total_str = total_match.group(0)
 
-            # Cek apakah ada halaman berikutnya
+            # Cek ada halaman berikutnya
             if "Next" in html and "go_log_page" in html:
                 has_next = True
 
-            # Cek apakah ini "End of List" (tidak ada halaman lagi)
+            # Cek End of List
             if "End of List" in html:
                 has_next = False
 
-            # ─── Parse data rows ──────────────────────────────
-            # Chiyu menggunakan TR dengan bgcolor untuk data rows.
-            # Pattern: <tr bgcolor='#999F9F'> atau <tr bgcolor='#99CFCF'>
-            # Ini cara paling reliable untuk mendapatkan SEMUA data row
-            # tanpa kehilangan satupun.
+         
             data_rows = soup.find_all("tr", bgcolor=True)
 
             for row in data_rows:
@@ -416,7 +355,6 @@ class ChiyuMachine(BaseMachine):
 
                 col_texts = [col.get_text(strip=True) for col in cols]
 
-                # Skip jika row ini adalah navigation/pagination row
                 joined = " ".join(col_texts).lower()
                 if "total" in joined and "record" in joined:
                     continue
@@ -424,12 +362,6 @@ class ChiyuMachine(BaseMachine):
                     continue
 
                 try:
-                    # Mapping kolom Chiyu:
-                    # [0] No, [1] Card ID, [2] Employee ID, [3] Name,
-                    # [4] Date, [5] Time, [6] Terminal, [7] IN/OUT, [8] Door
-
-                    # No. column — bisa "1 ." atau "1." atau "1"
-                    # Skip jika kolom 0 bukan angka (cleanup spasi & titik)
                     no_clean = col_texts[0].replace(".", "").strip()
                     if not no_clean.isdigit():
                         continue
@@ -447,13 +379,11 @@ class ChiyuMachine(BaseMachine):
                     in_out = col_texts[7].strip() if len(col_texts) > 7 else ""
                     door = col_texts[8].strip() if len(col_texts) > 8 else ""
 
-                    # Validasi minimal: harus ada identitas dan tanggal
                     if not card_id and not employee_id:
                         continue
                     if not date_str or "/" not in date_str:
                         continue
 
-                    # Parse datetime (format: MM/DD/YYYY HH:MM:SS)
                     timestamp = None
                     if time_str:
                         try:
@@ -483,7 +413,7 @@ class ChiyuMachine(BaseMachine):
                         name=name,
                         timestamp=timestamp,
                         status=status,
-                        punch=2,  # Chiyu: card-based
+                        punch=2,  
                         machine_name=self.name,
                         card_id=card_id,
                         department="",

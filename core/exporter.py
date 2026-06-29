@@ -1,7 +1,3 @@
-"""
-Module export data ke berbagai format (Excel, CSV).
-Output format: First IN / Last OUT per karyawan per hari.
-"""
 import os
 import logging
 from datetime import datetime
@@ -15,13 +11,10 @@ logger = logging.getLogger(__name__)
 
 
 class DataExporter:
-    """Export data attendance (First IN / Last OUT) ke file Excel atau CSV."""
-
     def __init__(self, summaries: list[DailySummaryRecord]):
         self._summaries = summaries
 
     def _to_dataframe(self) -> pd.DataFrame:
-        """Konversi list DailySummaryRecord ke pandas DataFrame."""
         data = []
         for s in self._summaries:
             data.append({
@@ -41,7 +34,6 @@ class DataExporter:
         return pd.DataFrame(data)
 
     def to_excel(self, filepath: str = "") -> str:
-        """Export ke file Excel (.xlsx). Returns: filepath."""
         if not filepath:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filepath = os.path.join(EXPORT_FOLDER, f"absensi_{timestamp}.xlsx")
@@ -70,7 +62,6 @@ class DataExporter:
         return filepath
 
     def to_csv(self, filepath: str = "") -> str:
-        """Export ke file CSV. Returns: filepath."""
         if not filepath:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             filepath = os.path.join(EXPORT_FOLDER, f"absensi_{timestamp}.csv")

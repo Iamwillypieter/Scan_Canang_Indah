@@ -149,7 +149,7 @@ class BaseMachine(ABC):
 
     @abstractmethod
     def connect(self) -> tuple[bool, str]:
-        """Buka koneksi ke mesin. Returns (success, message)."""
+        """Buka koneksi ke mesin."""
         pass
 
     @abstractmethod
@@ -159,12 +159,12 @@ class BaseMachine(ABC):
 
     @abstractmethod
     def test_connection(self) -> tuple[bool, str]:
-        """Test koneksi (connect lalu disconnect). Returns (success, message)."""
+        """Test koneksi. Returns (success, message)."""
         pass
 
     @abstractmethod
     def get_attendance_logs(self) -> tuple[list[AttendanceRecord], str]:
-        """Tarik data log absensi. Returns (records, message)."""
+        """Tarik data log absensi."""
         pass
 
     def ping(self) -> tuple[bool, str]:

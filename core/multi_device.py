@@ -1,8 +1,3 @@
-"""
-Multi-device manager.
-Mengelola koneksi dan penarikan data dari multiple mesin secara paralel.
-Menggunakan ThreadPoolExecutor agar UI tidak freeze.
-"""
 import logging
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -24,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 
 def create_machine(config: MachineConfig) -> BaseMachine:
-    """Factory function: buat instance mesin sesuai tipe."""
+    """Factory functon: buat instance mesin sesuai tipe."""
     if config.machine_type == MachineType.BIOTRONIX:
         return BiotronixMachine(config)
     elif config.machine_type == MachineType.CHIYU:
@@ -34,11 +29,6 @@ def create_machine(config: MachineConfig) -> BaseMachine:
 
 
 class MultiDeviceManager:
-    """
-    Manager untuk operasi multi-device secara concurrent.
-    Menjalankan koneksi/fetch di thread pool tanpa blocking UI.
-    """
-
     def __init__(self, machines: list[MachineConfig] = None):
         self._configs = machines or MACHINES
         self._max_workers = len(self._configs)
@@ -50,15 +40,7 @@ class MultiDeviceManager:
     def ping_all(
         self, progress_callback: Optional[Callable[[str, bool, str], None]] = None
     ) -> list[tuple[str, bool, str]]:
-        """
-        Ping semua mesin secara paralel.
-        
-        Args:
-            progress_callback: fn(machine_name, reachable, message)
-        
-        Returns:
-            List of (machine_name, reachable, message)
-        """
+      
         results = []
 
         with ThreadPoolExecutor(max_workers=self._max_workers) as executor:
@@ -86,15 +68,6 @@ class MultiDeviceManager:
     def test_all_connections(
         self, progress_callback: Optional[Callable[[str, bool, str], None]] = None
     ) -> list[MachineResult]:
-        """
-        Test koneksi ke semua mesin secara paralel.
-        
-        Args:
-            progress_callback: fn(machine_name, success, message)
-        
-        Returns:
-            List of MachineResult
-        """
         results = []
 
         with ThreadPoolExecutor(max_workers=self._max_workers) as executor:
@@ -133,19 +106,6 @@ class MultiDeviceManager:
         start_date: Optional[tuple[int, int, int]] = None,
         end_date: Optional[tuple[int, int, int]] = None,
     ) -> list[MachineResult]:
-        """
-        Tarik data attendance dari mesin secara paralel.
-        Jika satu mesin gagal, yang lain tetap berjalan.
-
-        Args:
-            progress_callback: fn(machine_name, status_message, records_count)
-            selected_machines: list nama mesin yang dipilih (None = semua)
-            start_date: (month, day, year_2digit) untuk filter tanggal di mesin
-            end_date: (month, day, year_2digit) untuk filter tanggal di mesin
-
-        Returns:
-            List of MachineResult (satu per mesin)
-        """
         results = []
 
         # Filter configs berdasarkan pilihan user
@@ -215,10 +175,6 @@ class MultiDeviceManager:
         start_date: Optional[tuple[int, int, int]] = None,
         end_date: Optional[tuple[int, int, int]] = None,
     ) -> MachineResult:
-        """
-        Fetch data dari satu mesin (dijalankan di thread).
-        Memiliki retry sendiri jika fetch gagal (terpisah dari retry connect).
-        """
         max_fetch_attempts = 2
 
         for attempt in range(1, max_fetch_attempts + 1):

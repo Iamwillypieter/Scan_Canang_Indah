@@ -1,7 +1,3 @@
-"""
-Main Application Window.
-Multi-device desktop app untuk tarik data absensi dari 4 mesin sekaligus.
-"""
 import customtkinter as ctk
 
 from config import APP_NAME, APP_VERSION, WINDOW_WIDTH, WINDOW_HEIGHT
