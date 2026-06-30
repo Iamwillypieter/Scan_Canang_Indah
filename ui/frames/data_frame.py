@@ -1,7 +1,3 @@
-"""
-Frame untuk menampilkan data attendance dalam format First IN / Last OUT.
-Dengan filter: Date Range, Card ID, Employee ID.
-"""
 from datetime import date
 from typing import Optional
 

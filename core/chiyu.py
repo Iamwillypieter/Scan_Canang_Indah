@@ -432,10 +432,6 @@ class ChiyuMachine(BaseMachine):
 
     @staticmethod
     def _parse_in_out_status(in_out_str: str) -> int:
-        """
-        Parse string IN/OUT dari Chiyu ke status code.
-        Chiyu format: "IN/IN", "OUT/OUT", "UNAUTHORIZED/IN", dll.
-        """
         if not in_out_str:
             return 0
 

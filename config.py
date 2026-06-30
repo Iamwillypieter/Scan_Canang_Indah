@@ -64,7 +64,7 @@ class MachineConfig:
 # ─── Daftar Mesin ────────────────────────────────────────────
 MACHINES: list[MachineConfig] = [
     MachineConfig(
-        name="Chiyu - Mesin 1",
+        name="Chiyu - HRM",
         ip="192.168.3.83",
         port=80,
         machine_type=MachineType.CHIYU,
@@ -72,7 +72,7 @@ MACHINES: list[MachineConfig] = [
         web_password="admin",
     ),
     MachineConfig(
-        name="Biotronix 6600 - Mesin 1",
+        name="Biotronix 6600 - MDF",
         ip="192.168.3.85",
         port=80,
         machine_type=MachineType.CHIYU,  
@@ -80,7 +80,7 @@ MACHINES: list[MachineConfig] = [
         web_password="admin",
     ),
     MachineConfig(
-        name="Chiyu - Mesin 2",
+        name="Chiyu - PB-1000",
         ip="192.168.3.86",
         port=80,
         machine_type=MachineType.CHIYU,
@@ -88,7 +88,7 @@ MACHINES: list[MachineConfig] = [
         web_password="admin",
     ),
     MachineConfig(
-        name="Biotronix 6600 - Mesin 2",
+        name="Biotronix 6600 - Sanding PB-Line",
         ip="192.168.3.87",
         port=80,
         machine_type=MachineType.CHIYU,  
@@ -96,7 +96,7 @@ MACHINES: list[MachineConfig] = [
         web_password="admin",
     ),
     MachineConfig(
-        name="Chiyu - Mesin 3",
+        name="Chiyu - Kontraktor",
         ip="192.168.3.240",
         port=80,
         machine_type=MachineType.CHIYU,

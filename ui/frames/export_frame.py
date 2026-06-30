@@ -1,6 +1,3 @@
-"""
-Frame untuk mengekspor data (First IN / Last OUT) ke Excel/CSV.
-"""
 import os
 import subprocess
 from typing import Callable
