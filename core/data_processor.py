@@ -36,7 +36,8 @@ class DailySummaryRecord:
 
     @property
     def date_str(self) -> str:
-        return self.date.strftime("%Y-%m-%d")
+        """Format: 27 June 2026"""
+        return self.date.strftime("%d %B %Y")
 
 
 # ─── Data Processor ──────────────────────────────────────────
@@ -162,7 +163,10 @@ class DataProcessor:
             "unique_users": len(unique_users),
             "check_in": check_in,
             "check_out": check_out,
-            "date_range": f"{min(dates)} s/d {max(dates)}",
+            "date_range": (
+                f"{min(dates).strftime('%d %B %Y')} "
+                f"s/d {max(dates).strftime('%d %B %Y')}"
+            ),
         }
 
     # ─── Sorting ──────────────────────────────────────────

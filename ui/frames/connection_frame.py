@@ -120,26 +120,26 @@ class ConnectionFrame(ctk.CTkFrame):
             row=1, column=0, padx=(15, 5), pady=10, sticky="w"
         )
         self.start_date_entry = ctk.CTkEntry(
-            filter_frame, placeholder_text="YYYY-MM-DD", width=125
+            filter_frame, placeholder_text="DD Month YYYY", width=145
         )
         self.start_date_entry.grid(row=1, column=1, padx=5, pady=10)
 
         # Set default: awal bulan ini
         today = date.today()
         first_day = today.replace(day=1)
-        self.start_date_entry.insert(0, first_day.strftime("%Y-%m-%d"))
+        self.start_date_entry.insert(0, first_day.strftime("%d %B %Y"))
 
         # End Date
         ctk.CTkLabel(filter_frame, text="End Date:").grid(
             row=1, column=2, padx=(15, 5), pady=10, sticky="w"
         )
         self.end_date_entry = ctk.CTkEntry(
-            filter_frame, placeholder_text="YYYY-MM-DD", width=125
+            filter_frame, placeholder_text="DD Month YYYY", width=145
         )
         self.end_date_entry.grid(row=1, column=3, padx=5, pady=10)
 
         # Set default: hari ini
-        self.end_date_entry.insert(0, today.strftime("%Y-%m-%d"))
+        self.end_date_entry.insert(0, today.strftime("%d %B %Y"))
 
         # Quick date buttons
         ctk.CTkButton(
@@ -212,7 +212,7 @@ class ConnectionFrame(ctk.CTkFrame):
     # ─── Quick Date Setters ──────────────────────────────
 
     def _set_today(self):
-        today = date.today().strftime("%Y-%m-%d")
+        today = date.today().strftime("%d %B %Y")
         self.start_date_entry.delete(0, "end")
         self.start_date_entry.insert(0, today)
         self.end_date_entry.delete(0, "end")
@@ -220,11 +220,11 @@ class ConnectionFrame(ctk.CTkFrame):
 
     def _set_this_month(self):
         today = date.today()
-        first = today.replace(day=1).strftime("%Y-%m-%d")
+        first = today.replace(day=1).strftime("%d %B %Y")
         self.start_date_entry.delete(0, "end")
         self.start_date_entry.insert(0, first)
         self.end_date_entry.delete(0, "end")
-        self.end_date_entry.insert(0, today.strftime("%Y-%m-%d"))
+        self.end_date_entry.insert(0, today.strftime("%d %B %Y"))
 
     # ─── Machine Selection ───────────────────────────────
 
@@ -273,12 +273,12 @@ class ConnectionFrame(ctk.CTkFrame):
     def _flexible_parse_date(s: str):
         from datetime import datetime as dt
         formats = [
+            "%d %B %Y",    # 27 June 2026  ← format utama
+            "%d %b %Y",    # 27 Jun 2026
             "%Y-%m-%d",    # 2026-06-27
-            "%Y-%m-%d",    # 2026-6-1 (strptime handles single digits)
             "%d/%m/%Y",    # 27/06/2026
             "%m/%d/%Y",    # 06/27/2026
         ]
-        # Normalize: hilangkan spasi ekstra
         s = s.strip()
         for fmt in formats:
             try:

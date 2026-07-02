@@ -35,7 +35,7 @@ class DataViewFrame(ctk.CTkFrame):
             row=1, column=0, padx=(15, 5), pady=6, sticky="w"
         )
         self.from_date_entry = ctk.CTkEntry(
-            filter_frame, placeholder_text="YYYY-MM-DD", width=115
+            filter_frame, placeholder_text="DD Month YYYY", width=130
         )
         self.from_date_entry.grid(row=1, column=1, padx=3, pady=6)
 
@@ -43,7 +43,7 @@ class DataViewFrame(ctk.CTkFrame):
             row=1, column=2, padx=(10, 5), pady=6, sticky="w"
         )
         self.to_date_entry = ctk.CTkEntry(
-            filter_frame, placeholder_text="YYYY-MM-DD", width=115
+            filter_frame, placeholder_text="DD Month YYYY", width=130
         )
         self.to_date_entry.grid(row=1, column=3, padx=3, pady=6)
 
@@ -156,16 +156,22 @@ class DataViewFrame(ctk.CTkFrame):
         self._apply_filter()
 
     def _parse_date(self, date_str: str) -> Optional[date]:
-        """Parse tanggal flexibel: YYYY-MM-DD atau YYYY-M-D."""
+        """Parse tanggal flexibel: DD Month YYYY, YYYY-MM-DD, dll."""
         if not date_str:
             return None
-        try:
-            # Split by dash and parse integers (handles both 2026-06-01 and 2026-6-1)
-            parts = date_str.strip().split("-")
-            if len(parts) == 3:
-                return date(int(parts[0]), int(parts[1]), int(parts[2]))
-        except (ValueError, IndexError):
-            pass
+        from datetime import datetime as dt
+        formats = [
+            "%d %B %Y",    # 27 June 2026  ← format utama
+            "%d %b %Y",    # 27 Jun 2026
+            "%Y-%m-%d",    # 2026-06-27
+            "%d/%m/%Y",    # 27/06/2026
+        ]
+        s = date_str.strip()
+        for fmt in formats:
+            try:
+                return dt.strptime(s, fmt).date()
+            except ValueError:
+                continue
         return None
 
     def _display_summaries(self, summaries: list[DailySummaryRecord], raw_count: int):
